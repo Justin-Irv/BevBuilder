@@ -1,0 +1,121 @@
+<div class="bgfresh">
+    <!-- <div style="height:60px; width:100%;" ng-show="isLoggedIn()"></div> -->
+        <div class=" no-bg container header-card-main full-width-container velocity-transition-slideDownBigIn velocity-duration-600"  ng-if="!isLoggedIn()">
+        <!-- ng-class="{ 'header-card-main-logged-in': isLoggedIn(), 'header-card-main': !isLoggedIn() }" -->
+               <!-- FIRST LINE -->
+            <form class="text-center " name="form" ng-submit="register(form)" novalidate>
+                <div  class="header-hello ">
+                    <p  class=" text-display-1 " >
+                        Hi BevBuilder,
+                    </p>
+                </div>
+                    <!-- SECOND LINE -->
+                <div  class="header-name-row "  >
+                    <p class="text-display-1 disp-inline-block">
+                         I am&nbsp;
+                    </p>
+                        <!-- NAME INPUT -->
+                    <div  class="disp-inline" ng-class="{'has-success': form.name.$valid && submitted,'has-error': form.name.$invalid && submitted }">
+                        <div class="mat-input-group">      
+                            <input 
+                                class="mat-input" 
+                                type="text" 
+                                name="name" 
+                                label="name" 
+                                ng-model="user.name" 
+                                required>
+                            <span class="highlight"></span>
+                            <span class="bar"></span>
+                            <label class="mat-input-label">name</label>
+                            <p class="help-block help-text form-error velocity-transition-slideDownIn" ng-if="form.name.$error.required && submitted">
+                                A name is required
+                            </p>
+                        </div>
+                        &nbsp;
+                    </div>
+                    <p class=" disp-inline text-display-1 ">
+                        and my email is
+                    </p>
+                        <!-- EMAIL INPUT -->
+                    <div class="disp-inline-block" ng-class="{ 'has-success': form.email.$valid  && submitted, 'has-error': form.email.$invalid && submitted } ">
+                        <div class="mat-input-group ">
+                            <input 
+                                type="text" 
+                                name="email" 
+                                label="email" 
+                                class="mat-input" 
+                                ng-model="user.email"
+
+                                ng-pattern="regEx"
+                                required
+                                mongoose-error>
+                            <span class="highlight"></span>
+                            <span class="bar"></span>
+                            <label class="mat-input-label" ng-class="{ 'is-valid': form.email.$valid }">email</label>
+                            <p class="help-block help-text form-error velocity-transition-slideDownIn" ng-if="form.email.$error.required && submitted">
+                                What's your email address?
+                            </p>
+                            <p class="help-block help-text velocity-transition-slideDownIn" ng-show="form.email.$error.email && submitted" >
+                                Doesn't look like a valid email.
+                            </p>
+                            <p class="help-block help-text velocity-transition-slideDownIn" ng-show="form.email.$error.mongoose">
+                                {{ errors.email }}
+                            </p>
+                        </div>
+                    </div>
+                    <p class="text-display-1 disp-inline"><span>
+                        .
+                    </span></p>
+                </div>
+
+                <div class="second-line velocity-transition-slideDownIn" ng-if="form.name.$valid && form.email.$valid" >
+                    <p class="text-display-1 disp-inline" >
+                        Set my password to
+                    </p>
+                        <!-- PASSWORD INPUT -->
+                    <div class="disp-inline" 
+                        ng-show="form.name.$valid && form.email.$valid" 
+                        ng-class="{ 'has-success': form.password.$valid &&             submitted,
+                                    'has-error': form.password.$invalid && submitted }">
+                        <div class="mat-input-group disp-inline-block">
+                            <input 
+                                class="mat-input" 
+                                type="password" 
+                                name="password" 
+                                label="password" 
+                                ng-model="user.password" 
+                                ng-minlength="3" 
+                                mongoose-error 
+                                required>
+                            <span class="highlight"></span>
+                            <span class="bar"></span>
+                            <label class="mat-input-label">password</label>
+                            <p class="help-block error-spacing help-text form-error velocity-transition-slideDownIn"
+                           ng-if="(form.password.$error.minlength || form.password.$error.required) && submitted">
+                                Password must be at least 3 characters.
+                            </p>
+                            <p class="help-block help-text " ng-if="form.password.$error.mongoose">
+                                {{ errors.password }}
+                            </p>
+                        </div>
+                        
+                    </div>
+                    <p class="text-display-1 disp-inline "   ng-show="form.name.$valid && form.email.$valid" ><span >
+                        .
+                    </span></p>
+                </div>
+                    <!-- THIRD LINE -->
+                <div  class=" disp-inline second-line">
+                    <p class="text-display-1">
+                        I would like to learn how to be a better bartender.
+                    </p>
+                </div>
+                    <!-- SIGN UP NOW BUTTON -->
+                <div class="signup-btn-container  text center" >
+                    <button class="signup-btn text-center" ng-click="signUp()" type="submit">
+                        SIGN UP NOW
+                    </button>
+                </div>
+            </form>
+        </div>
+    </div>

@@ -1,0 +1,642 @@
+$icon-font-path: "/bower_components/bootstrap-sass-official/vendor/assets/fonts/bootstrap/";
+$fa-font-path: "/bower_components/font-awesome/fonts";
+
+@import 'bootstrap-sass-official/vendor/assets/stylesheets/bootstrap';
+@import 'font-awesome/scss/font-awesome';
+@import '../bower_components/quantum-colors/quantum-colors';
+//@import '../bower_components/quantum-shadows/quantum-shadows';
+@import '../bower_components/bourbon/bourbon';
+
+/**
+ * App-wide Styles
+ */
+
+html {
+  font-size: 100% ;
+  ::-moz-selection { /* Code for Firefox */
+    color: red;
+    background: yellow;
+  }
+  ::selection {
+    color: #fff; 
+    background: $pink-a200;
+  }
+  body {
+    font-family: 'Open Sans', sans-serif;
+    /*font-family: 'Varela Round', sans-serif;*/
+    /*font-family: 'Roboto Condensed', sans-serif;*/
+    background-color: #e8eaf6;
+    a {
+      color: $indigo-500;
+    }
+    a:hover {
+      text-decoration: none;
+      //color: $indigo-700;
+      color: $pink-a200;
+    }
+  }
+}
+
+
+
+
+
+.navbar-padding {
+  //padding-right: .8rem;
+  padding-left: .8rem;
+  //top: 0.2rem;
+  //padding-bottom: 0.4rem;
+}
+
+.navbar-login {
+  padding-right: .8rem;
+  //left: -1rem
+}
+
+.card-container {
+  background-color: #fff;
+  //margin-bottom: 1.25rem;
+
+}
+
+.spacer1 {
+  padding-top: 2.5rem ;
+}
+
+/*Navigation Bar*/
+
+
+
+
+
+$leftKeyline: 2.5rem;
+$rightKeyline: 2.5rem;
+
+/*==================================================
+=            Bootstrap 3 Media Queries             =
+==================================================*/
+
+
+
+
+    /*==========  Mobile First Method  ==========*/
+
+    /* Custom, iPhone Retina */ 
+    @media only screen and (min-width : 320px) {
+        
+      
+      
+    }
+
+    /* Extra Small Devices, Phones */ 
+    @media only screen and (min-width : 480px) {
+      
+
+    }
+
+    /* Small Devices, Tablets */
+    @media only screen and (min-width : 768px) {
+      
+    }
+
+    /* Medium Devices, Desktops */
+    @media only screen and (min-width : 992px) {
+      html {
+        font-size: 125%;
+      }
+
+    }
+
+    /* Large Devices, Wide Screens */
+    @media only screen and (min-width : 1200px) {
+      
+    }
+
+
+
+    /*==========  Non-Mobile First Method  ==========*/
+
+    /* Large Devices, Wide Screens */
+    /*@media only screen and (max-width : 1200px) {
+
+    }
+
+    /* Medium Devices, Desktops */
+    /*@media only screen and (max-width : 992px) {
+
+    }
+*/
+    /* Small Devices, Tablets */
+    /*@media only screen and (max-width : 768px) {
+
+    }*/
+
+    /* Extra Small Devices, Phones */ 
+    /*@media only screen and (max-width : 480px) {
+
+    }*/
+
+    /* Custom, iPhone Retina */ 
+    /*@media only screen and (max-width : 320px) {
+        
+    }*/
+
+
+
+
+
+
+
+
+
+/* Material Design Input */
+
+
+  /*Variables*/
+
+$mat-input-width: 9.7rem;
+$mat-input-label-text-color: rgba(255,255,255,0.61);
+$mat-input-label-text-focus-color: #FF4081;
+$mat-input-bottom-bar-color: #FF4081;
+$mat-input-border-bottom-color: $pink-a200;
+
+.mat-input-group        { 
+  position:relative; 
+  margin-bottom:0px; 
+  font-size: 1rem;
+  top:-0.1rem;
+  display: inline-block;
+}
+input         {
+  
+  padding:10px 10px 0px 5px;
+  color: #fff;
+  display:block;
+  width:$mat-input-width;
+  border:none;
+  border-bottom:1px solid $mat-input-border-bottom-color ;
+  background-color: rgba(0,0,0,0);
+}
+input:focus     { outline:none; }
+
+/* LABEL ======================================= */
+.mat-input-label          {
+  color:$mat-input-label-text-color; 
+  font-size:1.5rem;
+  font-weight:normal;
+  position:absolute;
+  pointer-events:none;
+  left:5px;
+  top: 0.05rem;
+  transition:0.2s ease all; 
+  -moz-transition:0.2s ease all; 
+  -webkit-transition:0.2s ease all;
+}
+
+.is-valid {
+  color: $light-green-a200;
+}
+/* active state */
+input:focus ~ label, input:valid ~ label    {
+  top:-.75rem;
+  font-size:1rem;
+  color:$mat-input-label-text-focus-color;
+    /*color:$light-green-a200;*/
+
+}
+
+
+
+
+/*input:valid ~ label {
+  top:-1rem;
+  font-size:1rem;
+  color:$light-green-a200;
+}*/
+/* BOTTOM BARS ================================= */
+.bar  { position:relative; display:block; width:$mat-input-width; }
+.bar:before, .bar:after   {
+  content:'';
+  height:2px; 
+  width:0;
+  bottom:1px; 
+  position:absolute;
+  background:$mat-input-bottom-bar-color; 
+  transition:0.2s ease all; 
+  -moz-transition:0.2s ease all; 
+  -webkit-transition:0.2s ease all;
+}
+.bar:before {
+  left:50%;
+}
+.bar:after {
+  right:50%; 
+}
+
+/* active state */
+input:focus ~ .bar:before, input:focus ~ .bar:after {
+  width:50%;
+}
+
+/* HIGHLIGHTER ================================== */
+.highlight {
+  position:absolute;
+  height:70%; 
+  width: $mat-input-width/1.5; 
+  top:15%; 
+  left:0;
+  pointer-events:none;
+  opacity:0.5;
+}
+
+/* active state */
+input:focus ~ .highlight {
+  -webkit-animation:inputHighlighter 0.3s ease;
+  -moz-animation:inputHighlighter 0.3s ease;
+  animation:inputHighlighter 0.3s ease;
+}
+
+/* ANIMATIONS ================ */
+@-webkit-keyframes inputHighlighter {
+  from { background:#FF4081; }
+  to  { width:0; background:transparent; }
+}
+@-moz-keyframes inputHighlighter {
+  from { background:#FF4081; }
+  to  { width:0; background:transparent; }
+}
+@keyframes inputHighlighter {
+  from { background:#FF4081; }
+  to  { width:0; background:transparent; }
+}
+
+
+/* End Material Design Input */
+
+
+
+
+/***********   ng-hide animations   **************/
+
+
+
+
+/* when hiding the picture */
+/*.ng-hide-add         { animation: hide-animate-in 1s ease; }*/
+
+/* when showing the picture */
+
+
+/*Bootstrap Navbar variables*/
+
+
+
+
+
+
+$bgDefault      : $indigo-300;
+$bgHighlight    : #2727a4;
+$colDefault     : rgba(255,255,255,1);
+$colHighlight   : #fcfcfc;
+.navbar-default {
+  //background-color: $indigo-700;
+  background-color: #2727a4;
+  border-color: $bgHighlight;
+  opacity: 1;
+  font-size: .875rem;
+  margin:0;
+  //background: linear-gradient(to right, $deep-purple-700 0%,$indigo-700 59%,$blue-700 87%);
+  
+  
+  .navbar-brand {
+    
+    color: $colDefault;
+    font-size: .875rem;
+    > img {
+      height:40px; 
+      width:auto;
+      margin-top: -10px;
+      }
+    &:hover, &:focus {
+      color: $colHighlight; }}
+  .navbar-text {
+    color: $colDefault;
+    margin-top: 12.5px;
+    margin-bottom: 0px;
+    padding-left: 1rem;
+     }
+  .navbar-nav {
+    > li {       
+      > a {
+        color: $colDefault;
+        &:hover,  &:focus {
+          color: $colHighlight; }}}
+    > .active {
+      
+      > a, > a:hover, > a:focus {
+        color: $colHighlight;
+        background-color: $bgHighlight; }}
+    > .open {
+      > a, > a:hover, > a:focus {
+        color: $colHighlight;
+        background-color: $bgHighlight; }}}
+  .navbar-toggle {
+    border-color: $bgHighlight;
+    &:hover, &:focus {
+      background-color: $bgHighlight; }
+    .icon-bar {
+      background-color: $colDefault; }}
+  .navbar-collapse,
+  .navbar-form {
+    border-color: rgba(255,255,255,0) }
+  .navbar-link {
+    color: $colDefault;
+    &:hover {
+      color: $colHighlight; }}}
+@media (max-width: 767px) {
+  .navbar-default .navbar-nav .open .dropdown-menu {
+    > li > a {
+      color: $colDefault;
+      &:hover, &:focus {
+        color: $colHighlight; }}
+    > .active {
+      > a, > a:hover, > a:focus, {
+        color: $colHighlight;
+        background-color: $bgHighlight; }}}
+}
+
+
+//Typography Styles
+
+
+
+.text-display-4 {
+    font-size: 7rem;
+    font-weight: 300;
+    line-height: 8rem;
+    letter-spacing: 0.3125rem;
+    color: rgba(0,0,0,0.54);
+}
+
+.text-display-3 {
+    font-size: 3.5rem;
+    font-weight: 600;
+    line-height: 4rem;
+    color: rgba(255,255,255,0.97);
+    letter-spacing: -.05rem;
+}
+
+.text-display-2 {
+    font-size: 2.8125rem;
+    font-weight: 600;
+    line-height: 3.5rem;
+    color: rgba(0,0,0,.54);
+    letter-spacing: -.1rem;
+    margin-bottom: 2rem;
+    a {
+      color: #2727a4;
+    }
+}
+
+.text-display-1 {
+    font-size: 2.125rem;
+    font-weight: 600;
+    line-height: 2.5rem;
+    color: rgba(255,255,255,1);
+    letter-spacing: -.05rem;
+}
+
+.text-headline {
+    font-size: 1.5rem;
+    font-weight: 600;
+    line-height: 2rem;
+    color: rgba(255,255,255,0.87);
+    letter-spacing: -.05rem;
+    margin-bottom: 1rem;
+    a {
+      color: rgba(255,255,255,1);
+    }
+}
+
+.text-title {
+    font-size: 1.25rem;
+    font-weight: 600;
+    line-height: 1.5rem;
+    color: rgba(0,0,0,0.87);
+    letter-spacing: -.03rem
+}
+
+.text-subhead {
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5rem;
+}
+
+.text-body {
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.25rem;
+    color: rgba(255,255,255,1);
+}
+
+.text-body-blue {
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.25rem;
+  color: #2727a4;
+  //max-width: 35rem;
+}
+
+.text-caption {
+    font-size: 0.75rem;
+    font-weight: 400;
+    line-height: 1rem;
+}
+
+.text-menu {
+    font-size: .875rem;
+    font-weight: 600;
+    line-height: 1rem;
+}
+
+.text-button {
+    font-size: .875rem;
+    text-transform: uppercase;
+    font-weight: 600;
+    line-height: 1rem;
+}
+
+/* demo page styles */
+
+/*body {
+    margin: 0 auto;
+    background: #e8eaf6;
+    max-width: 1024px;
+}*/
+
+/*.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 48px 8%;
+}*/
+
+h1, h2, h3, h4 {
+    margin-top: 0;
+    padding:0;
+}
+
+p {
+    max-width: 40em;
+    //margin: .35rem 0;
+}
+
+/*a:link, a:visited, a:hover, a:active {
+    color: #dedede;
+    text-decoration: none;
+}*/
+
+
+
+/*SHOW*/
+
+/*.ng-hide-add {
+  @include animation(fadeOut 0.25s ease);
+}*/
+
+
+@keyframes fadeOut {
+  0% {
+    /*@include transform( scaleY(1));*/
+    /*opacity: 1;*/
+    /*line-height: 100%;*/
+  }
+
+  /*33% {
+    @include transform(scale(0.1));
+    transition-timing-function:ease-out;
+  }*/
+  
+  
+
+  100% {
+    
+    /*@include transform( scaleY(0));*/
+    /*opacity: 0;*/
+    /*line-height: 0;*/
+    /*@include transform(scale(0.1, 0.2));*/
+    /*transform: scale(0.1, 0.2);*/
+    /*transform: translate3d(50rem, 0, 0) ;*/
+    /*transition-timing-function: cubic-bezier(0.165, 0.840, 0.440, 1.000);*/
+  }
+}
+
+
+
+/*.ng-hide-remove {
+  @include animation(fadeIn 0.25s ease);
+}*/
+
+
+@keyframes fadeIn {
+  0% {
+    /*@include transform( scaleY(0));*/
+    /*opacity: 0;*/
+    /*line-height: 0;*/
+  }
+
+  /*33% {
+   
+    @include transform(scale(0.05));
+  }*/
+  
+  /*66% {
+     @include transform(scale(0.1));
+  }*/
+
+  100% {
+    /*@include transform( scaleY(1));*/
+    /*opacity: 1;*/
+    /*line-height: 100%;*/
+    /*@include transform(scale(0.1, 0.2));*/
+    /*transform: scale(0.1, 0.2);*/
+    /*transform: translate3d(50rem, 0, 0) ;*/
+    
+  }
+}
+
+
+
+
+/*@keyframes lightSpeedOut {
+  0% {
+    opacity: 1;
+  }
+
+  100% {
+    transform: translate3d(50rem, 0, 0) ;
+    transform: translate3d(50rem, 0, 0) ;
+    transform: translate3d(50rem, 0, 0) ;
+    opacity: 0;
+  }
+}*/
+
+
+/*-webkit-transition: all 300ms cubic-bezier(0.200, 0.425, 0.000, 1.000); 
+   -moz-transition: all 300ms cubic-bezier(0.200, 0.425, 0.000, 1.000); 
+     -o-transition: all 300ms cubic-bezier(0.200, 0.425, 0.000, 1.000); 
+        transition: all 300ms cubic-bezier(0.200, 0.425, 0.000, 1.000); 
+
+-webkit-transition-timing-function: cubic-bezier(0.200, 0.425, 0.000, 1.000); 
+   -moz-transition-timing-function: cubic-bezier(0.200, 0.425, 0.000, 1.000); 
+     -o-transition-timing-function: cubic-bezier(0.200, 0.425, 0.000, 1.000); 
+        transition-timing-function: cubic-bezier(0.200, 0.425, 0.000, 1.000);
+*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// Component styles are injected through grunt
+// injector
+@import 'account/login/login.scss';
+@import 'admin/admin.scss';
+@import 'directives/signUp/signUp.scss';
+@import 'main/main.scss';
+@import 'modal/modal.scss';
+// endinjector
+
+/**
+ * App-wide Styles
+ */
+
+.browsehappy {
+    margin: 0.2em 0;
+    background: #ccc;
+    color: #000;
+    padding: 0.2em 0;
+}
+
+// Component styles are injected through grunt
+// injector
+@import 'account/login/login.scss';
+@import 'admin/admin.scss';
+@import 'directives/signUp/signUp.scss';
+@import 'main/main.scss';
+@import 'modal/modal.scss';
+// endinjector

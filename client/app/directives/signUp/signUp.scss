@@ -1,6 +1,6 @@
 .header-card-main {
   //background-color: rgba(255,255,255,0.87);
-  padding-top: 1.25rem;
+  padding-top: 3.25rem;
   padding-right: $rightKeyline;
   padding-left: $leftKeyline;
   background: rgba(0,0,0,0);
@@ -19,6 +19,9 @@
   /*@include background(linear-gradient(red, green) left repeat);*/
   /*background-image: url("/assets/images/cocktail_craft.jpg");*/
   background-color: #2727a4;
+  //padding-top: 2rem;
+  padding-right: 1rem;
+  padding-left: 1rem;
   // background-color: $indigo-500;
   //border-bottom: 1px solid rgba(255,255,255,0.82);
   
@@ -30,7 +33,7 @@
   padding-left: $leftKeyline;
 }
 .neg-margin {
-  margin-top: -0.5rem;
+  //margin-top: -0.5rem;
 }
 
 .disp-inline-block {
@@ -48,9 +51,13 @@
 
 .second-line {
   > .text-display-1 {
-    line-height: 3.2rem;
-    margin-top: -.25rem;
+    //line-height: 3.5rem;
+    //margin-top: -.25rem;
   }
+}
+
+.header-hello {
+  padding-top: 2rem;
 }
 
 .has-error .help-text {
@@ -72,7 +79,7 @@
 
 .signup-btn-container {
   margin-top: 1.25rem;
-  margin-bottom: 3.09rem;
+  margin-bottom: 4.09rem;
   //margin-right: -2.5rem;
 }
 
@@ -88,9 +95,9 @@
   border-radius: 3.25rem;
   font-size: 1rem;
   //border: 2 px solid #ffffff;
-  -webkit-transition: all 0.25s ease-in-out;
-  -o-transition: all 0.25s ease-in-out;
-  transition: all 0.25s ease-in-out;
+  -webkit-transition: all 0.33s ease-in-out;
+  -o-transition: all 0.33s ease-in-out;
+  transition: all 0.33s ease-in-out;
 }
 
 .signup-btn:hover,
@@ -99,8 +106,8 @@
   // -webkit-box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
   // -moz-box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
   // box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
-  //background: #ffffff;
-  //color: #2727a4;
+  background: #FFFFFF;
+  color: #2727a4;
   border-radius: 0;
   border-top: 1px solid white;
   border-left: 1px solid white;

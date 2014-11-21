@@ -6,7 +6,8 @@ angular.module('bevBuilderApp', [
   'ngSanitize',
   'ui.router',
   'ui.bootstrap',
-  'SignUpDirective'
+  'SignUpDirective',
+  'ngAnimate'
 ])
   .config(function ($stateProvider, $urlRouterProvider, $locationProvider, $httpProvider) {
     $urlRouterProvider

@@ -2,24 +2,46 @@
 
 <div ng-cloak class="main-container ">
     <!-- <div ng-include="'components/signup/signup.html'"></div> -->
-     <sign-up class=""></sign-up> 
+     <sign-up></sign-up> 
     
     <div  class=" body-container container-fluid">
         <div class="row ">
             <div class="col-sm-12">
                 <div class="container">
-                <div class="row ">
-                <div class=" col-sm-6 col-sm-offset-3 text-center">
-                    <p class="text-display-2">What is BevBuilder?</p>
-                    
-                    <p class="text-body-blue">We are a web based education company built by bartenders for bartender.  Wether you are just getting behind the bar for the first time, or want to brush up on your skills, we have something for everyone, at every skill level.  Start your journey with the bare basics.  What spirits are.  Where they came from.  Then hone your bar techniques as you work through our video classrooms.  For each segment there are videos, recipes, and history of the cocktails and spirits.  There is also included a skill check test at the end of each segment to make sure that the knowledge you picked up is retained.</p>
-                </div>    
+                    <div class="row ">
+                         <!-- <p class="text-display-2 text-center">What we do</p> -->
+                        <div class=" col-sm-10 col-sm-offset-1 text-center">
+                            <div class="main-intro-logo "> 
+                                <img class="" src="/assets/images/bartools.png">
+                            </div>
+                            <div class="col-md-8 col-md-offset-2">
+                                <p class="text-headline-blue">
+                                    In A Nutshell
+                                </p>
+                                <p class="text-body-blue">BevBuilder is a beverage education platform built <em>for</em> bartenders <em>by</em> bartenders. With inspiring content designed to help you understand the why behind the what, BevBuilder will help guide you along your journey to becoming a more confident bartender. </p>
+                            </div>
+                        </div>
+                        <!-- <div class="col-sm-6 pull-right full-width-container">
+                            <div class="main-intro-logo "> 
+                                <img src="/assets/images/bartools.png">
+                            </div>
+                        </div>
+                        <div class="col-sm-6 full-width-container text-center">
+                            <div class="main-item-text ">
+                                <p class="text-headline-blue">
+                                    What we do
+                                </p>
+                                <p class="text-body-blue">BevBuilder is a beverage education platform built <em>for</em> bartenders <em>by</em> bartenders. With inspiring content designed to help you understand the why behind the what, BevBuilder will help guide you along your journey to becoming a more confident bartender. </p>
+                                
+                            </div>
+                        </div> -->    
+                    </div>
                 </div>
-                  </div>
-                <p class="text-display-2 text-center">
-                    <a class="" href="/basics/">Learn the basics</a>
-                </p>
-
+                <!-- <div class="row">
+                    <p class="text-display-2 text-center">
+                        <a class="" href="/basics/">Learn the basics</a>
+                    </p>
+                </div> -->
                 <div class="row bg-blue">
                     <div class="col-sm-6  full-width-container">
                         <div class="">
@@ -49,12 +71,17 @@
                 </div>
             </div>
         </div>
-            <div class="row ">
+            <div class="row " >
             <div class="col-sm-12">
                 <div class="row bg-blue">
-                    
-                    <div class="col-sm-6 full-width-container text-right">
+                    <div class="col-sm-6 full-width-container pull-right">
+                        <div class="main-item-image-right"> 
+                            <a ng-href="/basics/technique/"><img src="/assets/images/technique.jpg"></a>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 full-width-container " >
                         <div class="main-item-text-left ">
+
                             <p class="text-headline">
                                 <a href="/basics/technique/">
                                     Technique
@@ -62,23 +89,16 @@
                             </p>
                             <p class="text-body">
                                 Shaking, stirring, twists and flips. We'll teach you the correct techniques of the trade and when to use them right here.
-                                Why do you stir some cocktails and shake others?
+                                
                             </p>
                             <div class="main-item-text-btn" >
-                                <a ng-href="/basics/technique/"><button class="signup-btn text-center"  >
+                                <a ng-href="/basics/technique/"><button class="signup-btn text-center">
                                     LEARN MORE
                                 </button></a>
                             </div>
                         </div>
                     </div>
-                    <div class="col-sm-6  full-width-container">
-                        <div class="">
-                            <div class="main-item-image"> 
-                                <a ng-href="/basics/technique/"><img src="/assets/images/technique.jpg"></a>
-                            </div>
-                            
-                        </div>
-                    </div>
+                    
                 </div>
             </div>
         </div>
@@ -155,3 +175,7 @@
         </div>
     </div>
 </div>
+<div class="device-xs visible-xs"></div>
+<div class="device-sm visible-sm"></div>
+<div class="device-md visible-md"></div>
+<div class="device-lg visible-lg"></div>

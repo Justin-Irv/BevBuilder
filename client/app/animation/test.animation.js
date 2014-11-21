@@ -1,14 +1,16 @@
-var ngModule = angular.module('bevBuilderApp', ['ngAnimate']);
-ngModule.animation('.test-animation', function() {
-  return {
-    enter: function(element, done) {
+//'use strict';
+
+//var ngModule = angular.module('bevBuilderApp', ['ngAnimate']);
+//ngModule.animation('.test-animation', function() {
+  //return {
+    //enter: function(element, done) {
       //run the animation here and call done when the animation is complete
-      return function(cancelled) {
+      //return function(cancelled) {
         //this (optional) function will be called when the animation
         //completes or when the animation is cancelled (the cancelled
         //flag will be set to true if cancelled).
-      };
-    },
+      //};
+   // },
     // leave: function(element, done) { },
     // move: function(element, done) { },
 
@@ -23,5 +25,5 @@ ngModule.animation('.test-animation', function() {
 
     //animation that can be triggered after the class is removed
     // removeClass: function(element, className, done) { }
-  };
-});
+  //};
+//});

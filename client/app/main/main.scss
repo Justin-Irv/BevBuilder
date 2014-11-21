@@ -24,41 +24,83 @@
   //display: block;
   height: 100%;
   padding-left: 2.5rem;
-  //padding-right: 7.5rem;
+  padding-right: 2.5rem;
   padding-top: 2.25rem;
-  max-width: 25rem;
-  box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  -webkit-box-sizing: border-box;
-  -o-box-sizing: border-box;
+  max-width: 28rem;
+  
 }
 
 .main-item-text-left {
   //width: 100%;
-  float: right;
+  
   //display: block;
+  text-align: left;
   padding-right: 2.5rem;
+  padding-left: 2.5rem;
   //padding-right: 7.5rem;
   padding-top: 2.25rem;
-  max-width: 25rem;
-  box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  -webkit-box-sizing: border-box;
-  -o-box-sizing: border-box;
+  max-width: 28rem;
+  @media only screen and (min-width : 768px) {
+    float: right;
+    text-align: right;
+  }
+  
 }
 
-.main-item-image {
-  width: 100%;
+.main-item-text {
+  //width: 100%;
+  //float: right;
+  //display: block;
+  padding-right: 2.5rem;
+  padding-left: 2.5rem;
+
+  //padding-right: 7.5rem;
+  padding-top: 2.25rem;
+  //max-width: 28rem;
+  @media only screen and (min-width : 1200px) {
+    //width: 28rem;
+    padding-top: 2.25rem;
+  }
+  
+}
+
+.main-intro-logo {
+  padding: 2.5rem 3rem 2.5rem 3rem;
+
+  img {
+    //padding: 0 3rem;
+  }
+  
+  @media only screen and (min-width : 768px) {
+    //width: 80%;
+    //float: left;
+    img {
+      max-height: 20rem;
+      padding: 0;
+    }
+  }
+  @media only screen and (min-width : 1200px) {
+    img {
+      //max-height: 15rem;
+    }
+  }
+}
+
+.main-item-image-right {
+  //width: 80%;
   //float: left;
   //display: block;
-
+  margin-bottom: 2.25rem;
+  @media only screen and (min-width : 768px) {
+    margin-bottom: 0rem;
+  }
 }
 
 
 
 .main-item-text-btn {
   margin-top: 1.5rem;
-  margin-bottom: 1.75rem;
+  margin-bottom: 2.5rem;
 }
 
 .bg-blue {

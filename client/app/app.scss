@@ -1,6 +1,10 @@
 $icon-font-path: "/bower_components/bootstrap-sass-official/vendor/assets/fonts/bootstrap/";
 $fa-font-path: "/bower_components/font-awesome/fonts";
 
+
+$navbar-height: 60px;
+
+
 @import 'bootstrap-sass-official/vendor/assets/stylesheets/bootstrap';
 @import 'font-awesome/scss/font-awesome';
 @import '../bower_components/quantum-colors/quantum-colors';
@@ -19,8 +23,11 @@ html {
   }
   ::selection {
     color: #fff; 
-    background: $pink-a200;
+    background: #2727a4;
   }
+
+
+
   body {
     font-family: 'Open Sans', sans-serif;
     /*font-family: 'Varela Round', sans-serif;*/
@@ -83,8 +90,6 @@ $rightKeyline: 2.5rem;
 
     /* Custom, iPhone Retina */ 
     @media only screen and (min-width : 320px) {
-        
-      
       
     }
 
@@ -97,13 +102,14 @@ $rightKeyline: 2.5rem;
     /* Small Devices, Tablets */
     @media only screen and (min-width : 768px) {
       
+      
     }
 
     /* Medium Devices, Desktops */
     @media only screen and (min-width : 992px) {
-      html {
-        font-size: 125%;
-      }
+      // html {
+      //   font-size: 125%;
+      // }
 
     }
 
@@ -390,7 +396,7 @@ $colHighlight   : #fcfcfc;
     font-size: 2.8125rem;
     font-weight: 600;
     line-height: 3.5rem;
-    color: rgba(0,0,0,.54);
+    color: #2727a4;
     letter-spacing: -.1rem;
     margin-bottom: 2rem;
     a {
@@ -401,9 +407,15 @@ $colHighlight   : #fcfcfc;
 .text-display-1 {
     font-size: 2.125rem;
     font-weight: 600;
-    line-height: 2.5rem;
+    line-height: 2.825rem;
     color: rgba(255,255,255,1);
     letter-spacing: -.05rem;
+    @media only screen and (min-width : 768px) {
+      font-size: 2.125rem;
+      font-weight: 600;
+      line-height: 3.5rem;
+    }
+
 }
 
 .text-headline {
@@ -416,6 +428,16 @@ $colHighlight   : #fcfcfc;
     a {
       color: rgba(255,255,255,1);
     }
+}
+
+.text-headline-blue {
+    font-size: 1.5rem;
+    font-weight: 600;
+    line-height: 2rem;
+    color: #2727a4;
+    letter-spacing: -.05rem;
+    margin-bottom: 1rem;
+    
 }
 
 .text-title {
@@ -435,15 +457,17 @@ $colHighlight   : #fcfcfc;
 .text-body {
     font-size: 1rem;
     font-weight: 400;
-    line-height: 1.25rem;
+    line-height: 1.65rem;
     color: rgba(255,255,255,1);
 }
 
 .text-body-blue {
   font-size: 1rem;
   font-weight: 400;
-  line-height: 1.25rem;
+  line-height: 1.65rem;
   color: #2727a4;
+  margin-bottom: 3.75rem; 
+  padding: 0 0rem 0 0rem;
   //max-width: 35rem;
 }
 
@@ -486,7 +510,7 @@ h1, h2, h3, h4 {
 }
 
 p {
-    max-width: 40em;
+    //max-width: 40em;
     //margin: .35rem 0;
 }
 
@@ -625,18 +649,4 @@ p {
  * App-wide Styles
  */
 
-.browsehappy {
-    margin: 0.2em 0;
-    background: #ccc;
-    color: #000;
-    padding: 0.2em 0;
-}
 
-// Component styles are injected through grunt
-// injector
-@import 'account/login/login.scss';
-@import 'admin/admin.scss';
-@import 'directives/signUp/signUp.scss';
-@import 'main/main.scss';
-@import 'modal/modal.scss';
-// endinjector

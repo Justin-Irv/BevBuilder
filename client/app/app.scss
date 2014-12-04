@@ -17,22 +17,21 @@ $navbar-height: 60px;
 
 html {
   font-size: 100% ;
+
   ::-moz-selection { /* Code for Firefox */
-    color: red;
-    background: yellow;
+    color: #fff; 
+    background: $pink-a200;
   }
   ::selection {
     color: #fff; 
-    background: #2727a4;
+    background: $pink-a200;
   }
-
-
-
   body {
     font-family: 'Open Sans', sans-serif;
+
     /*font-family: 'Varela Round', sans-serif;*/
     /*font-family: 'Roboto Condensed', sans-serif;*/
-    background-color: #e8eaf6;
+    background-color: #ededed;
     a {
       color: $indigo-500;
     }
@@ -45,7 +44,9 @@ html {
 }
 
 
-
+.container-fluid {
+  max-width: 2000px;
+}
 
 
 .navbar-padding {
@@ -107,9 +108,9 @@ $rightKeyline: 2.5rem;
 
     /* Medium Devices, Desktops */
     @media only screen and (min-width : 992px) {
-      // html {
-      //   font-size: 125%;
-      // }
+      html {
+        font-size: 115%;
+      }
 
     }
 
@@ -327,7 +328,7 @@ $colHighlight   : #fcfcfc;
       color: $colHighlight; }}
   .navbar-text {
     color: $colDefault;
-    margin-top: 12.5px;
+    margin-top: 19px;
     margin-bottom: 0px;
     padding-left: 1rem;
      }
@@ -377,19 +378,36 @@ $colHighlight   : #fcfcfc;
 
 
 .text-display-4 {
+  font-size: 5.5rem;
+  font-weight: 400;
+  //line-height: 6rem;
+  //letter-spacing: 0.3125rem;
+  //color: rgba(0,0,0,0.54);
+  color: #2727a4;
+  letter-spacing: 0rem;
+  a {
+    color: #2727a4;
+  }
+  @media only screen and (min-width : 768px) {
     font-size: 7rem;
-    font-weight: 300;
-    line-height: 8rem;
-    letter-spacing: 0.3125rem;
-    color: rgba(0,0,0,0.54);
+    font-weight: 400;
+    //line-height: 8rem;
+    //letter-spacing: 0.3125rem;
+    //color: rgba(0,0,0,0.54);
+    color: #2727a4;
+    //letter-spacing: -.2rem;
+  }
+
+
 }
 
 .text-display-3 {
     font-size: 3.5rem;
     font-weight: 600;
     line-height: 4rem;
-    color: rgba(255,255,255,0.97);
-    letter-spacing: -.05rem;
+    //color: rgba(255,255,255,1);
+    color: #2727a4;
+    //letter-spacing: -.07rem;
 }
 
 .text-display-2 {
@@ -398,18 +416,22 @@ $colHighlight   : #fcfcfc;
     line-height: 3.5rem;
     color: #2727a4;
     letter-spacing: -.1rem;
-    margin-bottom: 2rem;
+    margin-bottom: 1.5rem;
     a {
       color: #2727a4;
     }
 }
 
 .text-display-1 {
-    font-size: 2.125rem;
+    font-size: 1.75rem;
     font-weight: 600;
-    line-height: 2.825rem;
+    line-height: 2.25rem;
     color: rgba(255,255,255,1);
     letter-spacing: -.05rem;
+
+    a {
+      color: #2727a4;
+    }
     @media only screen and (min-width : 768px) {
       font-size: 2.125rem;
       font-weight: 600;
@@ -437,6 +459,9 @@ $colHighlight   : #fcfcfc;
     color: #2727a4;
     letter-spacing: -.05rem;
     margin-bottom: 1rem;
+    a {
+      color: #2727a4;
+    }
     
 }
 
@@ -459,6 +484,14 @@ $colHighlight   : #fcfcfc;
     font-weight: 400;
     line-height: 1.65rem;
     color: rgba(255,255,255,1);
+    a {
+      color: $pink-a200;
+      //color: #CFCFCF;
+
+    }
+    a:hover {
+        color: #ffffff;
+      }
 }
 
 .text-body-blue {
@@ -466,9 +499,12 @@ $colHighlight   : #fcfcfc;
   font-weight: 400;
   line-height: 1.65rem;
   color: #2727a4;
-  margin-bottom: 3.75rem; 
+  //margin-bottom: 3.75rem; 
   padding: 0 0rem 0 0rem;
   //max-width: 35rem;
+  a {
+    color: $pink-a200;
+  }
 }
 
 .text-caption {
@@ -489,6 +525,8 @@ $colHighlight   : #fcfcfc;
     font-weight: 600;
     line-height: 1rem;
 }
+
+
 
 /* demo page styles */
 
@@ -640,6 +678,11 @@ p {
 // injector
 @import 'account/login/login.scss';
 @import 'admin/admin.scss';
+@import 'basics/basics.scss';
+@import 'basics/history/history.scss';
+@import 'basics/spirits/spirits.scss';
+@import 'basics/technique/technique.scss';
+@import 'classics/classics.scss';
 @import 'directives/signUp/signUp.scss';
 @import 'main/main.scss';
 @import 'modal/modal.scss';

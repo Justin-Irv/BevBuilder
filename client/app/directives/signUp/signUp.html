@@ -1,6 +1,6 @@
-<div class="bgfresh">
+<div class="bgfresh container-fluid">
     <!-- <div style="height:60px; width:100%;" ng-show="isLoggedIn()"></div> -->
-        <div class=" no-bg container header-card-main full-width-container "  ng-if="!isLoggedIn()">
+        <div class=" no-bg header-card-main  "  ng-if="!isLoggedIn()">
         <!-- ng-class="{ 'header-card-main-logged-in': isLoggedIn(), 'header-card-main': !isLoggedIn() }" -->
                <!-- FIRST LINE -->
             <form class="text-center " name="form" ng-submit="register(form)" novalidate>
@@ -113,7 +113,7 @@
                     <!-- SIGN UP NOW BUTTON -->
                 <div class="signup-btn-container  text center" >
                     <button class="signup-btn text-center" ng-click="signUp()" type="submit">
-                        SIGN UP NOW
+                        Sign Up Now
                     </button>
                 </div>
             </form>

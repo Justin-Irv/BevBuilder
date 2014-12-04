@@ -1,5 +1,5 @@
 .body-container {
-  margin-top: 2rem;
+  //padding-top: 3rem;
   //padding-left: $leftKeyline;
   //padding-right: $rightKeyline;
   img {
@@ -18,6 +18,10 @@
 
 }
 
+.intro-container {
+  padding-bottom: 4.75rem;
+  padding-top: 3rem;
+}
 .main-item-text-right {
   //width: 100%;
   //float: left;
@@ -25,8 +29,8 @@
   height: 100%;
   padding-left: 2.5rem;
   padding-right: 2.5rem;
-  padding-top: 2.25rem;
-  max-width: 28rem;
+  padding-top: 2.05rem;
+  max-width: 30rem;
   
 }
 
@@ -38,8 +42,8 @@
   padding-right: 2.5rem;
   padding-left: 2.5rem;
   //padding-right: 7.5rem;
-  padding-top: 2.25rem;
-  max-width: 28rem;
+  padding-top: 2.05rem;
+  max-width: 30rem;
   @media only screen and (min-width : 768px) {
     float: right;
     text-align: right;
@@ -48,13 +52,8 @@
 }
 
 .main-item-text {
-  //width: 100%;
-  //float: right;
-  //display: block;
   padding-right: 2.5rem;
   padding-left: 2.5rem;
-
-  //padding-right: 7.5rem;
   padding-top: 2.25rem;
   //max-width: 28rem;
   @media only screen and (min-width : 1200px) {
@@ -75,7 +74,7 @@
     //width: 80%;
     //float: left;
     img {
-      max-height: 20rem;
+      max-height: 25rem;
       padding: 0;
     }
   }
@@ -86,15 +85,7 @@
   }
 }
 
-.main-item-image-right {
-  //width: 80%;
-  //float: left;
-  //display: block;
-  margin-bottom: 2.25rem;
-  @media only screen and (min-width : 768px) {
-    margin-bottom: 0rem;
-  }
-}
+
 
 
 
@@ -122,7 +113,15 @@
 .full-width-container {
   padding: 0rem;
 
+
 }
 
+.bb-footer {
+  background: #ffffff;
+  padding: 4.75rem 1rem;
+}
 
+.bb-footer-content {
+  color: #929292;
 
+}

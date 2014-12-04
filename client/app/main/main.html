@@ -7,18 +7,21 @@
     <div  class=" body-container container-fluid">
         <div class="row ">
             <div class="col-sm-12">
-                <div class="container">
+                <div  class="container intro-container">
                     <div class="row ">
                          <!-- <p class="text-display-2 text-center">What we do</p> -->
-                        <div class=" col-sm-10 col-sm-offset-1 text-center">
+                        <div class=" col-sm-12  text-center">
                             <div class="main-intro-logo "> 
-                                <img class="" src="/assets/images/bartools.png">
+                                <img class="text-center" src="/assets/images/bartools.png">
                             </div>
                             <div class="col-md-8 col-md-offset-2">
                                 <p class="text-headline-blue">
                                     In A Nutshell
                                 </p>
-                                <p class="text-body-blue">BevBuilder is a beverage education platform built <em>for</em> bartenders <em>by</em> bartenders. With inspiring content designed to help you understand the why behind the what, BevBuilder will help guide you along your journey to becoming a more confident bartender. </p>
+                                <p class="text-headline-blue-basics">BevBuilder is a beverage education platform built <em>for</em> bartenders <em>by</em> bartenders. With inspiring content designed to help you understand the why behind the what, BevBuilder will help guide you along your journey to becoming a more confident bartender. 
+                                 
+                                <!-- <br> <br>Below you will find our classes organized into three simple sections based on your skill level. If you are just getting started or would like to  refresh your knowledge, check out our <a href="/basics">basics</a> course. Once you have the basics down you are ready to move on to <a href="/classics">classics cocktails</a>. Classic cocktails are the building blocks on which most modern cocktails draw influence and are essential to know through and through. The next course on <a href="/modern">modern mixology</a> is where the real fun begins and is where we will introduce you to more advanced concepts such as pressure infusions and pectin free carbonated juices. --></p>
+                                <p class="text-body-blue"></p>
                             </div>
                         </div>
                         <!-- <div class="col-sm-6 pull-right full-width-container">
@@ -46,7 +49,7 @@
                     <div class="col-sm-6  full-width-container">
                         <div class="">
                             <div class="main-item-image"> 
-                                <a ng-href="/basics/base_spirits/"><img src="/assets/images/whiskey.jpg"></a>
+                                <a ui-sref="basics"><img src="/assets/images/basics.jpg"></a>
                             </div>
                             
                         </div>
@@ -54,15 +57,18 @@
                     <div class="col-sm-6 full-width-container">
                         <div class="main-item-text-right">
                             <p class="text-headline">
-                                <a href="/basics/base_spirits/">
-                                    Base Spirits
+                                <a href="basics">
+                                    Basics
                                 </a>
                             </p>
                             <p class="text-body">
-                                What is whiskey? Why do some gins taste like an evergreen forest? This is your resource for everything vodka, gin, rum, whiskey, brandy, tequila and more.
+                                Whether you're just getting started or are a seasoned pro, mastering the basics is essential. This course is here to help you learn the fundamentals of bartending, BevBuilder style.
                             </p>
+                            <!-- <p class="text-body">
+                                What is whiskey? Why do some gins taste like an evergreen forest? This is your resource for everything vodka, gin, rum, whiskey, brandy, tequila and more.
+                            </p> -->
                             <div class="main-item-text-btn" >
-                                <a ng-href="/basics/base_spirits/"><button class="signup-btn text-center"  >
+                                <a href="/basics"><button class="signup-btn text-center"  >
                                     LEARN MORE
                                 </button></a>
                             </div>
@@ -71,111 +77,88 @@
                 </div>
             </div>
         </div>
-            <div class="row " >
-            <div class="col-sm-12">
-                <div class="row bg-blue">
-                    <div class="col-sm-6 full-width-container pull-right">
-                        <div class="main-item-image-right"> 
-                            <a ng-href="/basics/technique/"><img src="/assets/images/technique.jpg"></a>
-                        </div>
-                    </div>
-                    <div class="col-sm-6 full-width-container " >
-                        <div class="main-item-text-left ">
+        <div class="row bg-blue">
+            <div class="col-sm-6 full-width-container pull-right ">
+                <div class="main-item-image-right"> 
+                    <a ui-sref="classics"><img src="/assets/images/manhattan.jpg"></a>
+                </div>
+            </div>
+            <div class="col-sm-6 full-width-container clearfix" >
+                <div class="main-item-text-left ">
 
-                            <p class="text-headline">
-                                <a href="/basics/technique/">
-                                    Technique
-                                </a>
-                            </p>
-                            <p class="text-body">
-                                Shaking, stirring, twists and flips. We'll teach you the correct techniques of the trade and when to use them right here.
-                                
-                            </p>
-                            <div class="main-item-text-btn" >
-                                <a ng-href="/basics/technique/"><button class="signup-btn text-center">
-                                    LEARN MORE
-                                </button></a>
-                            </div>
-                        </div>
+                    <p class="text-headline ">
+                        <a ui-sref="classics">
+                            Classics
+                        </a>
+                    </p>
+                    <p class="text-body">
+                        Shaking, stirring, twists and flips. We'll teach you the correct techniques of the trade and when to use them right here.
+                        
+                    </p>
+                    <div class="main-item-text-btn" >
+                        <a ui-sref="classics"><button class="signup-btn text-center">
+                            LEARN MORE
+                        </button></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row bg-blue">
+            <div class="col-sm-6  full-width-container">
+                <div class="">
+                    <div class="main-item-image"> 
+                        <a ui-sref="mixology"><img src="/assets/images/gingerbreadflip.jpg"></a>
                     </div>
                     
                 </div>
             </div>
-        </div>
-            <!-- <div class="col-sm-6  box-outline-container">
-                <div class="box-outline">
-                    <p class="text-headline ">
-                        <a href="/basics/technique/">
-                            Technique
+            <div class="col-sm-6 full-width-container">
+                <div class="main-item-text-right">
+                    <p class="text-headline">
+                        <a href="/mixology">
+                            Modern Mixology
                         </a>
                     </p>
-                    <a href="/basics/technique/"><img  src="/assets/images/technique.jpg"></a>
                     <p class="text-body">
-                        Shaking, stirring, twists and flips. We'll teach you the correct techniques of the trade and when to use them right here.
-                        Why do you stir some cocktails and shake others? What is a twist and what does it 
+                        What is whiskey? When do you shake a drink, and what is a twist? This is your resource for <a href="/spirits">spirits</a>, <a href="/basics/technique">technique</a>, <a href="/basics/history">history</a>, <a href="/basics/glassware">glassware</a> and <a href="/basics">more</a>.
                     </p>
-                </div>
-            </div> -->
-            <div class="col-sm-6 box-outline-container" ng-hide="">
-                <div class="box-outline">
-                    <p class="text-headline ">
-                        <a href="/basics/technique/">
-                            History
-                        </a>
-                    </p>
-                    <a href="/basics/history/"><img  src="/assets/images/history.jpg"></a>
-                    <p class="text-body">
-                        Death is Inevitable; Let's Get Drunk. —Roman Aphorism. We are not talking about paint and gymnastics. Learn the techniques of the trade, and when to use them right here.
-                        
-                    </p>
+                    <!-- <p class="text-body">
+                        What is whiskey? Why do some gins taste like an evergreen forest? This is your resource for everything vodka, gin, rum, whiskey, brandy, tequila and more.
+                    </p> -->
+                    <div class="main-item-text-btn" >
+                        <a href="/mixology"><button class="signup-btn text-center"  >
+                            LEARN MORE
+                        </button></a>
+                    </div>
                 </div>
             </div>
-        
-
-        <p  class="text-title more">
-            <a href="/basics/">More about the basics...</a>
-        </p>
-
-        <div class="row ">
-            <p class="text-display-2 ">
-                Learn the classics
-            </p>
-            <div class="  col-sm-6">
-                <p class="text-headline">
-                    Whiskey
-                </p>
-                <p class="text-body">
-                    Something interesting to say about all this.
-                </p>
-            </div>
-            <div class="text-display-1  card-container col-sm-6">
-                Template for a blank new card for the UI.
-            </div>
         </div>
-        
-        <div class="row">
-            <p class="text-display-2 ">
-                Modern mixology
-            </p>
-            <div class="col-sm-6 ">
-                <p class="text-headline">
-                    Template for a blank new card for the UI.
+        <!-- <div class="col-sm-6  box-outline-container">
+            <div class="box-outline">
+                <p class="text-headline ">
+                    <a href="/basics/technique/">
+                        Technique
+                    </a>
                 </p>
+                <a href="/basics/technique/"><img  src="/assets/images/technique.jpg"></a>
                 <p class="text-body">
-                    Something interesting to say about all this.
+                    Shaking, stirring, twists and flips. We'll teach you the correct techniques of the trade and when to use them right here.
+                    Why do you stir some cocktails and shake others? What is a twist and what does it 
                 </p>
             </div>
-            <div class="text-display-1 col-sm-6">
-                Template for a blank new card for the UI.
-            </div>
-        </div>     
+        </div> -->
         
-        <div class="text-display-1">
-            Template for a blank new card for the UI.
-        </div>
     </div>
 </div>
-<div class="device-xs visible-xs"></div>
+<div class="bb-footer container-fluid">
+    <div class="col-sm-12 bb-footer-content text-center">
+        <p>BevBuilder is a beverage education platform designed to help you become a better bartender.</p>
+        <p>Handcrafted in Seattle, WA.<br>BevBuilder 2014</p>
+        <p></p>
+    </div>
+</div>
+
+<!-- <div class="device-xs visible-xs"></div>
 <div class="device-sm visible-sm"></div>
 <div class="device-md visible-md"></div>
-<div class="device-lg visible-lg"></div>
+<div class="device-lg visible-lg"></div> -->

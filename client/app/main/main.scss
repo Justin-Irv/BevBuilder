@@ -29,21 +29,22 @@
   //height: 100%;
   padding-left: 2.5rem;
   padding-right: 2.5rem;
-  padding-top: 3rem;
-  
+  padding-top: 2rem;
+  width: 100%;
 
   @media only screen and (min-width : 768px) {
     //width: 80%;
     //float: left;
     max-width: 30rem;
+    padding-top: 3rem;
   }
 }
 
 .main-intro-logo {
   padding: 3.5rem 2.5rem 0rem 2.5rem;
   img {
-    padding-left: 15%;
-    padding-right: 15%;
+    padding-left: 18%;
+    padding-right: 18%;
   }
   @media only screen and (min-width : 768px) {
     //width: 80%;
@@ -56,14 +57,14 @@
   }
   @media only screen and (min-width : 992px) {
      img {
-      padding-left: 25%;
+      padding-left: 35%;
       padding-right: 0;
       float: right;
     }
   }
   @media only screen and (min-width : 1200px) {
     img {
-      padding-left: 40%;
+      padding-left: 50%;
       padding-right: 0;
       float: right;
     }
@@ -73,8 +74,8 @@
 
 
 .intro-container {
-  padding-bottom: 3.5rem;
-  padding-top: 3.5rem;
+  padding-bottom: 4.75rem;
+  padding-top: 4.75rem;
 }
 .main-item-text-right {
   //width: 100%;

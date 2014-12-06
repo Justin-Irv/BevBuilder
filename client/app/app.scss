@@ -108,9 +108,9 @@ $rightKeyline: 2.5rem;
 
     /* Medium Devices, Desktops */
     @media only screen and (min-width : 992px) {
-      html {
-        font-size: 115%;
-      }
+      // html {
+      //   font-size: 115%;
+      // }
 
     }
 
@@ -440,6 +440,19 @@ $colHighlight   : #fcfcfc;
 
 }
 
+.text-display-1-wwd {
+  font-size: 2.125rem;
+  font-weight: 600;
+  line-height: 3.5rem;
+  color: #2727a4;
+  //letter-spacing: -.05rem;
+
+  a {
+    color: #2727a4;
+  }
+    
+}
+
 .text-headline {
     font-size: 1.5rem;
     font-weight: 600;
@@ -501,7 +514,7 @@ $colHighlight   : #fcfcfc;
   color: #2727a4;
   //margin-bottom: 3.75rem; 
   padding: 0 0rem 0 0rem;
-  //max-width: 35rem;
+  max-width: 30rem;
   a {
     color: $pink-a200;
   }

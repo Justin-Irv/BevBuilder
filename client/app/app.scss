@@ -28,7 +28,7 @@ html {
   }
   body {
     font-family: 'Open Sans', sans-serif;
-
+    word-spacing: .2rem;
     /*font-family: 'Varela Round', sans-serif;*/
     /*font-family: 'Roboto Condensed', sans-serif;*/
     background-color: #ededed;
@@ -678,6 +678,7 @@ p {
 // injector
 @import 'account/login/login.scss';
 @import 'admin/admin.scss';
+@import 'animation/animations.scss';
 @import 'basics/basics.scss';
 @import 'basics/history/history.scss';
 @import 'basics/spirits/spirits.scss';

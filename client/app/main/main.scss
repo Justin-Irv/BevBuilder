@@ -19,24 +19,18 @@
 }
 
 .main-what-we-do-title {
-  color: #2727a4;
+  //color: #2727a4;
 }
 
 .main-what-we-do-right {
-  //width: 100%;
-  //float: left;
-  //display: block;
-  //height: 100%;
   padding-left: 2.5rem;
   padding-right: 2.5rem;
-  
   width: 100%;
-
   @media only screen and (min-width : 768px) {
     //width: 80%;
     //float: left;
     max-width: 30rem;
-    padding-top: 2.5rem;
+    padding-top: 2.93rem;
   }
 }
 
@@ -51,7 +45,7 @@
     //width: 80%;
     //float: left;
     img {
-      padding-left: 15%;
+      padding-left: 0%;
       padding-right: 0;
       padding-top: 3.5;
       float: right;
@@ -59,15 +53,15 @@
   }
   @media only screen and (min-width : 992px) {
      img {
-      padding-left: 35%;
+      padding-left: 20%;
       padding-right: 0;
       float: right;
     }
   }
   @media only screen and (min-width : 1200px) {
     img {
-      padding-left: 45%;
-      padding-right: 0;
+      padding-left: 30%;
+      padding-right: 2.75rem;
       float: right;
     }
   }

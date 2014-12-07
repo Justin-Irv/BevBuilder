@@ -28,7 +28,13 @@
     <![endif]-->
 
     <!-- Add your site or application content here -->
-    <div ui-view=""></div>
+    
+    <div class="ui-view-container">
+    <!-- <div ng-include="'components/navbar/navbar.html'"></div> -->
+    <div class="root-container" ui-view></div>
+    <!-- <div ng-include="'components/footer/footer.html'"></div> -->
+    </div>
+    
 
     <!-- Google Analytics: change UA-XXXXX-X to be your site's ID -->
     <script>

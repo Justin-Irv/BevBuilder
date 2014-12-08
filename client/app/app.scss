@@ -482,7 +482,7 @@ $colHighlight   : #fcfcfc;
     font-size: 1.25rem;
     font-weight: 600;
     line-height: 1.5rem;
-    color: rgba(0,0,0,0.87);
+    color: #2727a4;
     letter-spacing: -.03rem
 }
 
@@ -684,34 +684,6 @@ p {
           animation-fill-mode: both;
 }
 
-[ui-view].ng-enter { 
-  /* starting animations for enter */
-  position: absolute;
-  -webkit-transition: .5s  all; /* Safari/Chrome */
-  transition: .5s  all; /* All other modern browsers and IE10+ */
-  opacity: 0;
-  -webkit-transform: translate3d(-2000px, 0, 0);
-          transform: translate3d(-2000px, 0, 0);}
-        
-[ui-view].ng-enter.ng-enter-active {
-  /* terminal animations for enter */
-  opacity: 1;
-  -webkit-transform: none;
-          transform: none;
-} 
-[ui-view].ng-leave { 
-  position: absolute;
-   -webkit-transition: .5s  all; /* Safari/Chrome */
-  transition: .5s  all; /* All other modern browsers and IE10+ */
-  opacity: 1;
-  -webkit-transform: none;
-          transform: none;
-}        /* starting animations for leave */
-[ui-view].ng-leave.ng-leave-active { 
-  opacity: 0;
-  -webkit-transform: translate3d(2000px, 0, 0);
-          transform: translate3d(2000px, 0, 0);
-} /* terminal animations for leave */
 
 .fadeInLeftBig {
   -webkit-animation-name: fadeInLeftBig;

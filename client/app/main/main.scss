@@ -35,7 +35,7 @@
 }
 
 .main-intro-logo {
-  padding: 0rem 2.5rem 0rem 2.5rem;
+  padding: 0rem 2.5rem 2rem 2.5rem;
   img {
     padding-top: 2.93rem;
     padding-left: 18%;
@@ -53,8 +53,8 @@
   }
   @media only screen and (min-width : 992px) {
      img {
-      padding-left: 20%;
-      padding-right: 0;
+      padding-left: 18%;
+      padding-right: 5%;
       float: right;
     }
   }
@@ -111,10 +111,13 @@
     //width: 28rem;
     padding-top: 2.25rem;
   }
-  
 }
 
-
+.main-item-image-right {
+  img {
+    width:100%;
+  }
+}
 
 
 
@@ -143,16 +146,24 @@
   }
 .full-width-container {
   padding: 0rem;
-
-
 }
 
 .bb-footer {
   background: #ffffff;
-  padding: 4.75rem 1rem;
+  padding: 4.75rem 2.5rem;
 }
 
 .bb-footer-content {
   color: #929292;
+  img {
+    padding-top: 2rem;
+  }
+  
+  @media only screen and (min-width : 768px) {
+    padding-left: 2.5rem;
+    img {
+    padding-top: 0rem;
+  }
+  }
 
 }

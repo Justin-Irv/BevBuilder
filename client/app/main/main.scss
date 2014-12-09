@@ -22,6 +22,20 @@
   //color: #2727a4;
 }
 
+
+
+
+
+.main-title {
+
+  padding: 2.93rem 2.5rem;
+  background: #ffffff;
+}
+
+
+
+
+
 .main-what-we-do-right {
   padding-left: 2.5rem;
   padding-right: 2.5rem;
@@ -44,24 +58,25 @@
   @media only screen and (min-width : 768px) {
     //width: 80%;
     //float: left;
+    padding-left: 5%;
     img {
       padding-left: 0%;
       padding-right: 0;
-      padding-top: 3.5;
+      padding-top: 3.5rem;
       float: right;
     }
   }
   @media only screen and (min-width : 992px) {
      img {
-      padding-left: 18%;
-      padding-right: 5%;
+      padding-left: 15%;
+      //padding-right: 5%;
       float: right;
     }
   }
   @media only screen and (min-width : 1200px) {
     img {
       padding-left: 30%;
-      padding-right: 2.75rem;
+      //padding-right: 2.75rem;
       float: right;
     }
   }

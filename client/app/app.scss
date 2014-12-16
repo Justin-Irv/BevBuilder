@@ -838,11 +838,20 @@ p {
 @import 'basics/basics.scss';
 @import 'basics/glassware/glassware.scss';
 @import 'basics/history/history.scss';
+@import 'basics/spirits/brandy/brandy.scss';
+@import 'basics/spirits/gin/gin.scss';
+@import 'basics/spirits/rum/rum.scss';
 @import 'basics/spirits/spirits.scss';
+@import 'basics/spirits/tequila/tequila.scss';
+@import 'basics/spirits/vodka/vodka.scss';
+@import 'basics/spirits/whiskey/whiskey.scss';
 @import 'basics/technique/technique.scss';
+@import 'classes/classes.scss';
 @import 'classics/classics.scss';
 @import 'directives/signUp/signUp.scss';
 @import 'main/main.scss';
+@import 'mixology/mixology.scss';
+@import 'recipes/recipes.scss';
 @import 'modal/modal.scss';
 // endinjector
 

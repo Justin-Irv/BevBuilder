@@ -7,7 +7,8 @@ angular.module('bevBuilderApp', [
   'ui.router',
   'ui.bootstrap',
   'SignUpDirective',
-  'ngAnimate'
+  'ngAnimate',
+  'headroom'
 ])
   .config(function ($stateProvider, $urlRouterProvider, $locationProvider, $httpProvider) {
     $urlRouterProvider

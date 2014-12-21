@@ -1,4 +1,18 @@
 
+.headroom {
+    -webkit-transition: transform 200ms linear;
+    transition: transform 200ms linear;
+}
+.headroom--pinned {
+    -webkit-transform: translateY(0px);
+    transform: translateY(0px);
+}
+.headroom--unpinned {
+    -webkit-transform: translateY(-100px);
+    transform: translateY(-100px);
+}
+
+
 // [ui-view].ng-enter { 
 //   position: relative;
 //   -moz-transition: .5s  all; 

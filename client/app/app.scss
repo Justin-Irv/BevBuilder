@@ -1,9 +1,9 @@
-$icon-font-path: "/bower_components/bootstrap-sass-official/vendor/assets/fonts/bootstrap/";
+ $icon-font-path: "/bower_components/bootstrap-sass-official/vendor/assets/fonts/bootstrap/";
 $fa-font-path: "/bower_components/font-awesome/fonts";
 
 
 $navbar-height: 60px;
-
+//$grid-float-breakpoint: 1600px;
 
 @import 'bootstrap-sass-official/vendor/assets/stylesheets/bootstrap';
 @import 'font-awesome/scss/font-awesome';
@@ -45,13 +45,13 @@ html {
 
 
 .container-fluid {
-  max-width: 2000px;
+  max-width: 1600px;
 }
 
 
 .navbar-padding {
   //padding-right: .8rem;
-  padding-left: .8rem;
+  padding-left: .7rem;
   //top: 0.2rem;
   //padding-bottom: 0.4rem;
 }
@@ -70,12 +70,6 @@ html {
 .spacer1 {
   padding-top: 2.5rem ;
 }
-
-/*Navigation Bar*/
-
-
-
-
 
 $leftKeyline: 2.5rem;
 $rightKeyline: 2.5rem;
@@ -147,12 +141,6 @@ $rightKeyline: 2.5rem;
     /*@media only screen and (max-width : 320px) {
         
     }*/
-
-
-
-
-
-
 
 
 

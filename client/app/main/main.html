@@ -1,8 +1,8 @@
 
 <div ng-include="'components/navbar/navbar.html'"></div>
-<div  class="main-container ">
+<div  class="main-container">
 
-     <sign-up></sign-up> 
+    <sign-up ></sign-up> 
     
     <div  class=" body-container container-fluid ">
         <div class="container full-width-container ">
@@ -18,7 +18,7 @@
                     <p class="text-headline-blue">
                         Beverage Education
                     </p>
-                    <p class="text-body-blue"><b>We're here to help you be a better bartender</b>. BevBuilder is a beverage education platform built <b><i>for</i></b> bartenders <b><i>by</i></b> bartenders. With inspiring content designed to help you understand the why behind the what, BevBuilder will help guide you along your journey to becoming a more confident bartender.
+                    <p class="text-body-blue"><b>We're here to help you become a better bartender</b>. BevBuilder is a beverage education platform built <b><i>for</i></b> bartenders <b><i>by</i></b> bartenders. With inspiring content designed to help you understand the why behind the what, BevBuilder will help guide you along your journey to becoming a more confident bartender.
                     <br>
                     Check out our <a ui-sref="classes">classes</a>, learn a <a ui-sref="technique">technique</a>, or try a <a ui-sref="recipes">recipe</a>.
                     </p>
@@ -31,10 +31,91 @@
             </div>
         </div>
 
-        <div class="main-title row text-center">
-            <p class="text-display-1-wwd">Classes</p>
+
+
+        <div  class="main-title row text-center">
+            <p class="text-display-1-wwd">Latest</p>
+        </div>
+        <div class="row">
+            <div class="col-sm-6  full-width-container">
+                <div class="main-item-image"> 
+                    <a ui-sref="basics"><img  src="/assets/images/dark.jpg"></a>
+                </div>
+            </div>
+            <div class="col-sm-6 full-width-container">
+                <div class="main-item-text-right">
+                    <p class="text-headline-blue">
+                        <a href="basics">
+                            Latest Title First
+                        </a>
+                    </p>
+                    <p class="text-body-blue">
+                        This course is here to help you learn the fundamentals of bartending including base <a ui-sref="spirits">spirits</a>, <a ui-sref="technique">techniques</a>, <a ui-sref="glassware">glassware</a> and <a ui-sref="basics">more</a>.
+                    </p>
+                    <div class="main-item-text-btn" >
+                        <a ui-sref="basics"><button class="basics-btn text-center"  >
+                            LEARN MORE
+                        </button></a>
+                    </div>
+                </div>
+            </div>
         </div>
 
+        <div class="row visible-xs-block">
+            <div class="col-sm-6  full-width-container">
+                <div class="main-item-image"> 
+                    <a ui-sref="basics"><img  src="/assets/images/modern.jpg"></a>
+                </div>
+            </div>
+            <div class="col-sm-6 full-width-container">
+                <div class="main-item-text-right">
+                    <p class="text-headline-blue">
+                        <a ui-sref="classics">
+                            Latest Title Second
+                        </a>
+                    </p>
+                    <p class="text-body-blue">
+                        {{classics.desc}}
+                    </p>
+                    <div class="main-item-text-btn" >
+                        <a ui-sref="classics"><button class="basics-btn text-center"  >
+                            LEARN MORE
+                        </button></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row hidden-xs">
+            <div class="col-sm-6 full-width-container pull-right clearfix">
+                <div class="main-item-image-right "> 
+                    <a ui-sref="classics"><img src="/assets/images/modern.jpg"></a>
+                </div>
+            </div>
+            <div class="col-sm-6 full-width-container " >
+                <div class="main-item-text-left ">
+
+                    <p class="text-headline-blue ">
+                        <a ui-sref="classics">
+                            Latest Title Second
+                        </a>
+                    </p>
+                    <p class="text-body-blue">
+                        {{classics.desc}}
+                        
+                    </p>
+                    <div class="main-item-text-btn" >
+                        <a ui-sref="classics"><button class="basics-btn text-center">
+                            LEARN MORE
+                        </button></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="main-title row text-center">
+            <p class="text-display-1-wwd"><a ui-sref="classes">Classes</a></p>
+        </div>
         <div class="row bg-blue ">
             <div class="col-sm-6  full-width-container">
                 <div class="main-item-image"> 
@@ -74,7 +155,7 @@
                         </a>
                     </p>
                     <p class="text-body">
-                        Classic cocktails are the building blocks on which modern cocktails draw influence and are essential to know through and through.
+                        {{classics.desc}}
                     </p>
                     <div class="main-item-text-btn" >
                         <a ui-sref="classics"><button class="signup-btn text-center"  >
@@ -100,7 +181,7 @@
                         </a>
                     </p>
                     <p class="text-body">
-                        Classic cocktails are the building blocks on which modern cocktails draw influence and are essential to know through and through.
+                        {{classics.desc}}
                         
                     </p>
                     <div class="main-item-text-btn" >
@@ -126,7 +207,7 @@
                         </a>
                     </p>
                     <p class="text-body">
-                        What is whiskey? When do you shake a drink, and what is a twist? This is your resource for <a href="/spirits">spirits</a>, <a href="/basics/technique">technique</a>, <a href="/basics/history">history</a>, <a href="/basics/glassware">glassware</a> and <a href="/basics">more</a>.
+                        This is where the real fun begins. Follow along for more advanced concepts like <a ui-sref="bitters">creating bitters</a>, <a ui-sref="pressure-infusions">pressure infusions</a>, and <a ui-sref="mixology">more</a>.
                     </p>
                     <!-- <p class="text-body">
                         What is whiskey? Why do some gins taste like an evergreen forest? This is your resource for everything vodka, gin, rum, whiskey, brandy, tequila and more.

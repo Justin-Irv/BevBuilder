@@ -1,9 +1,78 @@
 <div ng-include="'components/navbar/navbar.html'"></div>
+<sign-up ></sign-up> 
+<div class="container-fluid">
+  <div  class="row main-title text-center">
+      <p class="text-display-1-wwd">Login</p>
+  </div>
 
-<div class="container">
   <div class="row">
-    <div class="col-sm-12">
-      <h1>Login</h1>
+  <form class="form" name="form" ng-submit="login(form)" >
+    <div class="col-sm-6">
+
+
+    <div class="disp-block" ng-class="{ 'has-success': form.email.$valid  && submitted, 'has-error': form.email.$invalid && submitted } ">
+        <div class="mat-input-group ">
+            <input 
+                type="text" 
+                name="email" 
+                label="email" 
+                class="mat-input" 
+                ng-model="user.email"
+
+                ng-pattern="regEx"
+                required
+                mongoose-error>
+            <span class="highlight"></span>
+            <span class="bar"></span>
+            <label class="mat-input-label" ng-class="{ 'is-valid': form.email.$valid }">email</label>
+            <p class="help-block help-text form-error velocity-transition-slideDownIn" ng-if="form.email.$error.required && submitted">
+                What's your email address?
+            </p>
+            <p class="help-block help-text velocity-transition-slideDownIn" ng-show="form.email.$error.email && submitted" >
+                Doesn't look like a valid email.
+            </p>
+            <p class="help-block help-text velocity-transition-slideDownIn" ng-show="form.email.$error.mongoose">
+                {{ errors.email }}
+            </p>
+        </div>
+    </div>
+    <br>
+
+
+    <div class="disp-block" 
+        
+        ng-class="{ 'has-success': form.password.$valid && submitted,
+                    'has-error': form.password.$invalid && submitted }">
+        <div class="mat-input-group disp-inline-block">
+            <input 
+                class="mat-input" 
+                type="password" 
+                name="password" 
+                label="password" 
+                ng-model="user.password" 
+                ng-minlength="3" 
+                mongoose-error 
+                required>
+            <span class="highlight"></span>
+            <span class="bar"></span>
+            <label class="mat-input-label">password</label>
+            <p class="help-block error-spacing help-text form-error velocity-transition-slideDownIn"
+           ng-if="(form.password.$error.minlength || form.password.$error.required) && submitted">
+                Password must be at least 3 characters.
+            </p>
+            <p class="help-block help-text " ng-if="form.password.$error.mongoose">
+                {{ errors.password }}
+            </p>
+        </div>
+        
+    </div>
+    </form>
+
+
+
+
+
+      <!-- <h1>Login</h1>
       <p>Accounts are reset on server restart from <code>server/config/seed.js</code>. Default account is <code>test@test.com</code> / <code>test</code></p>
       <p>Admin account is <code>admin@admin.com</code> / <code>admin</code></p>
     </div>
@@ -42,7 +111,7 @@
           </a>
         </div>
 
-      </form>
+      </form> -->
     </div>
   </div>
   <hr>

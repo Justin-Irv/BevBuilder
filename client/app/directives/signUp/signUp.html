@@ -1,6 +1,6 @@
-<div class="bgfresh container-fluid">
+<div class="bgfresh container-fluid "  ng-if="!isLoggedIn()">
     <!-- <div style="height:60px; width:100%;" ng-show="isLoggedIn()"></div> -->
-        <div class=" no-bg header-card-main  "  ng-if="!isLoggedIn()">
+        <div class=" no-bg header-card-main  ">
         <!-- ng-class="{ 'header-card-main-logged-in': isLoggedIn(), 'header-card-main': !isLoggedIn() }" -->
                <!-- FIRST LINE -->
             <form class="text-center " name="form" ng-submit="register(form)" novalidate>

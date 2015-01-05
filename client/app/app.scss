@@ -1,8 +1,9 @@
- $icon-font-path: "/bower_components/bootstrap-sass-official/vendor/assets/fonts/bootstrap/";
+$icon-font-path: "/bower_components/bootstrap-sass-official/vendor/assets/fonts/bootstrap/";
 $fa-font-path: "/bower_components/font-awesome/fonts";
 
 
 $navbar-height: 60px;
+//$screen-sm: 600px;
 //$grid-float-breakpoint: 1600px;
 
 @import 'bootstrap-sass-official/vendor/assets/stylesheets/bootstrap';
@@ -27,6 +28,7 @@ html {
     background: $pink-a200;
   }
   body {
+   
     font-family: 'Open Sans', sans-serif;
     word-spacing: .2rem;
     /*font-family: 'Varela Round', sans-serif;*/
@@ -45,7 +47,7 @@ html {
 
 
 .container-fluid {
-  max-width: 1600px;
+  max-width: 2000px;
 }
 
 
@@ -150,6 +152,7 @@ $rightKeyline: 2.5rem;
   /*Variables*/
 
 $mat-input-width: 9.7rem;
+
 $mat-input-label-text-color: rgba(255,255,255,0.61);
 $mat-input-label-text-focus-color: #FF4081;
 $mat-input-bottom-bar-color: #FF4081;
@@ -161,6 +164,10 @@ $mat-input-border-bottom-color: $pink-a200;
   font-size: 1rem;
   top:-0.1rem;
   display: inline-block;
+  /* Large Devices, Wide Screens */
+    @media only screen and (min-width : 1200px) {
+      font-size: 1.65rem;
+    }
 }
 input         {
   
@@ -168,6 +175,9 @@ input         {
   color: #fff;
   display:block;
   width:$mat-input-width;
+  @media only screen and (min-width : 1200px) {
+    width: 15rem;
+  }
   border:none;
   border-bottom:1px solid $mat-input-border-bottom-color ;
   background-color: rgba(0,0,0,0);
@@ -186,6 +196,11 @@ input:focus     { outline:none; }
   transition:0.2s ease all; 
   -moz-transition:0.2s ease all; 
   -webkit-transition:0.2s ease all;
+
+  @media only screen and (min-width : 1200px) {
+      font-size: 2.4rem;
+      top: -.2rem;
+    }
 }
 
 .is-valid {
@@ -197,6 +212,10 @@ input:focus ~ label, input:valid ~ label    {
   font-size:1rem;
   color:$mat-input-label-text-focus-color;
     /*color:$light-green-a200;*/
+  @media only screen and (min-width : 1200px) {
+      font-size: 1.65rem;
+      top:-1.25rem;
+    }
 
 }
 
@@ -209,7 +228,14 @@ input:focus ~ label, input:valid ~ label    {
   color:$light-green-a200;
 }*/
 /* BOTTOM BARS ================================= */
-.bar  { position:relative; display:block; width:$mat-input-width; }
+.bar  { 
+  position:relative; 
+  display:block; 
+  width:$mat-input-width; 
+  @media only screen and (min-width : 1200px) {
+    width: 15rem;
+  }
+}
 .bar:before, .bar:after   {
   content:'';
   height:2px; 
@@ -422,8 +448,12 @@ $colHighlight   : #fcfcfc;
     }
     @media only screen and (min-width : 768px) {
       font-size: 2.125rem;
-      font-weight: 600;
       line-height: 3.5rem;
+    }
+
+    @media only screen and (min-width : 1200px) {
+      font-size: 3rem;
+      line-height: 4.875rem;
     }
 
 }
@@ -840,6 +870,7 @@ p {
 @import 'main/main.scss';
 @import 'mixology/mixology.scss';
 @import 'recipes/recipes.scss';
+@import 'recipes/zyxt/zyxt.scss';
 @import 'modal/modal.scss';
 // endinjector
 

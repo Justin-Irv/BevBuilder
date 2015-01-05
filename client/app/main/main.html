@@ -1,31 +1,30 @@
+<div ng-include="'components/navbar/navbar.html'">
+</div>
+<div class="main-container">
 
-<div ng-include="'components/navbar/navbar.html'"></div>
-<div  class="main-container">
+    <sign-up></sign-up>
 
-    <sign-up ></sign-up> 
-    
-    <div  class=" body-container container-fluid ">
+    <div class=" body-container container-fluid ">
         <div class="container full-width-container ">
             <div class="row intro-container">
-                 <p class="text-display-1-wwd text-center ">What We Do</p>
+                <p class="text-display-1-wwd text-center ">What We Do</p>
                 <div class=" col-sm-6 full-width-container">
-                    <div class="main-intro-logo text-center"> 
+                    <div class="main-intro-logo text-center">
                         <img class="" src="/assets/images/beved.png">
                     </div>
                 </div>
                 <div class="col-sm-6 full-width-container ">
                     <div class="main-what-we-do-right">
-                    <p class="text-headline-blue">
-                        Beverage Education
-                    </p>
-                    <p class="text-body-blue"><b>We're here to help you become a better bartender</b>. BevBuilder is a beverage education platform built <b><i>for</i></b> bartenders <b><i>by</i></b> bartenders. With inspiring content designed to help you understand the why behind the what, BevBuilder will help guide you along your journey to becoming a more confident bartender.
-                    <br>
-                    Check out our <a ui-sref="classes">classes</a>, learn a <a ui-sref="technique">technique</a>, or try a <a ui-sref="recipes">recipe</a>.
-                    </p>
+                        <p class="text-headline-blue">
+                            Beverage Education
+                        </p>
+                        <p class="text-body-blue"><b>We're here to help you become a better bartender</b>. BevBuilder is a beverage education platform built <b><i>for</i></b> bartenders <b><i>by</i></b> bartenders. With inspiring content designed to help you understand the why behind the what, BevBuilder will help guide you along to becoming a more confident bartender.
+                            <br> Check out our <a ui-sref="classes">classes</a>, learn a <a ui-sref="technique">technique</a>, or try a <a ui-sref="recipes">recipe</a>.
+                        </p>
 
-                     
-                    <!-- <br> <br>Below you will find our classes organized into three simple sections based on your skill level. If you are just getting started or would like to  refresh your knowledge, check out our <a href="/basics">basics</a> course. Once you have the basics down you are ready to move on to <a href="/classics">classics cocktails</a>. Classic cocktails are the building blocks on which most modern cocktails draw influence and are essential to know through and through. The next course on <a href="/modern">modern mixology</a> is where the real fun begins and is where we will introduce you to more advanced concepts such as pressure infusions and pectin free carbonated juices. -->
-                    <p class="text-body-blue"></p>
+
+                        <!-- <br> <br>Below you will find our classes organized into three simple sections based on your skill level. If you are just getting started or would like to  refresh your knowledge, check out our <a href="/basics">basics</a> course. Once you have the basics down you are ready to move on to <a href="/classics">classics cocktails</a>. Classic cocktails are the building blocks on which most modern cocktails draw influence and are essential to know through and through. The next course on <a href="/modern">modern mixology</a> is where the real fun begins and is where we will introduce you to more advanced concepts such as pressure infusions and pectin free carbonated juices. -->
+                        <p class="text-body-blue"></p>
                     </div>
                 </div>
             </div>
@@ -33,35 +32,66 @@
 
 
 
-        <div  class="main-title row text-center">
+        <div class="main-title row text-center">
             <p class="text-display-1-wwd">Latest</p>
         </div>
-        <div class="row">
+        <div id="latest-first" class="row">
             <div class="col-sm-6  full-width-container">
-                <div class="main-item-image"> 
-                    <a ui-sref="basics"><img  src="/assets/images/dark.jpg"></a>
+                <div class="main-item-image">
+                    <a ui-sref="zyxt"><img src="/assets/images/zyxt.jpg">
+                    </a>
                 </div>
             </div>
             <div class="col-sm-6 full-width-container">
                 <div class="main-item-text-right">
                     <p class="text-headline-blue">
-                        <a href="basics">
-                            Latest Title First
+                        <a ui-sref="zyxt">
+                            Zyxt
                         </a>
                     </p>
                     <p class="text-body-blue">
-                        This course is here to help you learn the fundamentals of bartending including base <a ui-sref="spirits">spirits</a>, <a ui-sref="technique">techniques</a>, <a ui-sref="glassware">glassware</a> and <a ui-sref="basics">more</a>.
+                        A play off the gin based prohibition-era cocktail, The Last Word. Roasted jalapeno gin, Yellow Chartreuse, St. Germaine and lemon. Spicy, sweet, sour, herbal - it has it all.
                     </p>
-                    <div class="main-item-text-btn" >
-                        <a ui-sref="basics"><button class="basics-btn text-center"  >
-                            LEARN MORE
-                        </button></a>
+                    <div class="main-item-text-btn">
+                        <a ui-sref="zyxt">
+                            <button class="basics-btn text-center">
+                                LEARN MORE
+                            </button>
+                        </a>
                     </div>
                 </div>
             </div>
         </div>
 
-        <div class="row visible-xs-block">
+        <div id="latest-second" class="row">
+            <div class="col-sm-6  full-width-container">
+                <div class="main-item-image">
+                    <a ui-sref="zyxt"><img src="/assets/images/modern.jpg">
+                    </a>
+                </div>
+            </div>
+            <div class="col-sm-6 full-width-container">
+                <div class="main-item-text-right">
+                    <p class="text-headline-blue">
+                        <a ui-sref="zyxt">
+                            optio accusantium
+                        </a>
+                    </p>
+                    <p class="text-body-blue">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto sunt blanditiis quos optio accusantium nostrum sequi sapiente dicta animi
+                    </p>
+                    <div class="main-item-text-btn">
+                        <a ui-sref="zyxt">
+                            <button class="basics-btn text-center">
+                                LEARN MORE
+                            </button>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- <div id="" class="row visible-xs-block">
             <div class="col-sm-6  full-width-container">
                 <div class="main-item-image"> 
                     <a ui-sref="basics"><img  src="/assets/images/modern.jpg"></a>
@@ -111,15 +141,17 @@
                     </div>
                 </div>
             </div>
-        </div>
+        </div> -->
 
         <div class="main-title row text-center">
-            <p class="text-display-1-wwd"><a ui-sref="classes">Classes</a></p>
+            <p class="text-display-1-wwd"><a ui-sref="classes">Classes</a>
+            </p>
         </div>
         <div class="row bg-blue ">
             <div class="col-sm-6  full-width-container">
-                <div class="main-item-image"> 
-                    <a ui-sref="basics"><img  src="/assets/images/Cocktail-Contest.jpg"></a>
+                <div class="main-item-image">
+                    <a ui-sref="basics"><img src="/assets/images/Cocktail-Contest.jpg">
+                    </a>
                 </div>
             </div>
             <div class="col-sm-6 full-width-container">
@@ -132,10 +164,12 @@
                     <p class="text-body">
                         This course is here to help you learn the fundamentals of bartending including base <a ui-sref="spirits">spirits</a>, <a ui-sref="technique">techniques</a>, <a ui-sref="glassware">glassware</a> and <a ui-sref="basics">more</a>.
                     </p>
-                    <div class="main-item-text-btn" >
-                        <a ui-sref="basics"><button class="signup-btn text-center"  >
-                            LEARN MORE
-                        </button></a>
+                    <div class="main-item-text-btn">
+                        <a ui-sref="basics">
+                            <button class="main-btn text-center">
+                                LEARN MORE
+                            </button>
+                        </a>
                     </div>
                 </div>
             </div>
@@ -143,8 +177,9 @@
 
         <div class="row bg-blue visible-xs-block">
             <div class="col-sm-6  full-width-container">
-                <div class="main-item-image"> 
-                    <a ui-sref="basics"><img  src="/assets/images/manhattan.jpg"></a>
+                <div class="main-item-image">
+                    <a ui-sref="basics"><img src="/assets/images/manhattan.jpg">
+                    </a>
                 </div>
             </div>
             <div class="col-sm-6 full-width-container">
@@ -157,10 +192,12 @@
                     <p class="text-body">
                         {{classics.desc}}
                     </p>
-                    <div class="main-item-text-btn" >
-                        <a ui-sref="classics"><button class="signup-btn text-center"  >
-                            LEARN MORE
-                        </button></a>
+                    <div class="main-item-text-btn">
+                        <a ui-sref="classics">
+                            <button class="main-btn text-center">
+                                LEARN MORE
+                            </button>
+                        </a>
                     </div>
                 </div>
             </div>
@@ -168,11 +205,12 @@
 
         <div class="row bg-blue hidden-xs">
             <div class="col-sm-6 full-width-container pull-right clearfix">
-                <div class="main-item-image-right "> 
-                    <a ui-sref="classics"><img src="/assets/images/manhattan.jpg"></a>
+                <div class="main-item-image-right ">
+                    <a ui-sref="classics"><img src="/assets/images/manhattan.jpg">
+                    </a>
                 </div>
             </div>
-            <div class="col-sm-6 full-width-container " >
+            <div class="col-sm-6 full-width-container ">
                 <div class="main-item-text-left ">
 
                     <p class="text-headline ">
@@ -182,12 +220,14 @@
                     </p>
                     <p class="text-body">
                         {{classics.desc}}
-                        
+
                     </p>
-                    <div class="main-item-text-btn" >
-                        <a ui-sref="classics"><button class="signup-btn text-center">
-                            LEARN MORE
-                        </button></a>
+                    <div class="main-item-text-btn pull-right">
+                        <a ui-sref="classics">
+                            <button class="main-btn text-center">
+                                LEARN MORE
+                            </button>
+                        </a>
                     </div>
                 </div>
             </div>
@@ -195,8 +235,9 @@
 
         <div class="row bg-blue">
             <div class="col-sm-6  full-width-container">
-                <div class="main-item-image"> 
-                    <a ui-sref="mixology"><img src="/assets/images/gingerbreadflip.jpg"></a>
+                <div class="main-item-image">
+                    <a ui-sref="mixology"><img src="/assets/images/gingerbreadflip.jpg">
+                    </a>
                 </div>
             </div>
             <div class="col-sm-6 full-width-container">
@@ -212,10 +253,12 @@
                     <!-- <p class="text-body">
                         What is whiskey? Why do some gins taste like an evergreen forest? This is your resource for everything vodka, gin, rum, whiskey, brandy, tequila and more.
                     </p> -->
-                    <div class="main-item-text-btn" >
-                        <a href="/mixology"><button class="signup-btn text-center"  >
-                            LEARN MORE
-                        </button></a>
+                    <div class="main-item-text-btn">
+                        <a href="/mixology">
+                            <button class="main-btn text-center">
+                                LEARN MORE
+                            </button>
+                        </a>
                     </div>
                 </div>
             </div>

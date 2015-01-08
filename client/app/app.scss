@@ -850,6 +850,7 @@ p {
 
 // Component styles are injected through grunt
 // injector
+@import 'about/about.scss';
 @import 'account/login/login.scss';
 @import 'admin/admin.scss';
 @import 'animation/animations.scss';
@@ -866,6 +867,7 @@ p {
 @import 'basics/technique/technique.scss';
 @import 'classes/classes.scss';
 @import 'classics/classics.scss';
+@import 'contact/contact.scss';
 @import 'directives/signUp/signUp.scss';
 @import 'main/main.scss';
 @import 'mixology/mixology.scss';

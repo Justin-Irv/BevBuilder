@@ -1,7 +1,7 @@
 'use strict';
 
 angular.module('bevBuilderApp')
-  .controller('NavbarCtrl', function ($scope, $location, Auth) {
+  .controller('NavbarCtrl', function ($scope, $location, Auth, $rootScope) {
     $scope.menu = [{
       'title': 'Home',
       'link': '/'
@@ -20,4 +20,17 @@ angular.module('bevBuilderApp')
     $scope.isActive = function(route) {
       return route === $location.path();
     };
+
+  
+
+    $rootScope.userLogin = function() {
+      $rootScope.userStatus = 'login';
+
+    };
+
+    $rootScope.userSignin = function() {
+      $rootScope.userStatus = 'signin';
+
+    };
+
   });

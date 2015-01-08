@@ -1,7 +1,7 @@
 'use strict';
 
 angular.module('bevBuilderApp')
-  .controller('signupController', function ($scope, $http, Auth, $location, $window) {
+  .controller('signupController', function ($scope, $http, Auth, $location, $window, $rootScope) {
     $scope.user = {};
     $scope.errors = {};
     $scope.isLoggedIn = Auth.isLoggedIn;
@@ -47,6 +47,8 @@ angular.module('bevBuilderApp')
     $scope.onSignup = function() {
 
     };
+
+    $rootScope.userStatus = 'signup';
 
     $scope.regEx =  /^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
 

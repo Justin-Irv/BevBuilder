@@ -1,6 +1,6 @@
-<div class="bgfresh container-fluid ">
+<div class="bgfresh container-fluid " ng-if="!isLoggedIn()">
     <!-- <div style="height:60px; width:100%;" ng-show="isLoggedIn()"></div> -->
-    <div class=" no-bg header-card-main text-center" ng-switch on="userStatus" ng-if="!isLoggedIn()">
+    <div class=" no-bg header-card-main text-center" ng-switch on="userStatus" >
         <!-- ng-class="{ 'header-card-main-logged-in': isLoggedIn(), 'header-card-main': !isLoggedIn() }" -->
         <!-- FIRST LINE -->
         <div class="container-fluid text-center">
@@ -13,7 +13,7 @@
                     </div>
                     <br>
                     <!-- SECOND LINE -->
-                    <div class="header-name-row ">
+                    
                         <!-- EMAIL INPUT -->
                         <div id="" ng-class="{ 'has-success': form.email.$valid  && submitted, 'has-error': form.email.$invalid && submitted } ">
                             <div class="mat-input-group ">
@@ -32,7 +32,7 @@
                                 </p>
                             </div>
                         </div>
-                    </div>
+                    
                     <br>
                     <div class="second-line">
                         <!-- PASSWORD INPUT -->
@@ -95,7 +95,7 @@
                         &nbsp;
                     </div>
                     <p class=" disp-inline text-display-1 ">
-                        and my email is
+                        and my email is&nbsp;
                     </p>
                     <!-- EMAIL INPUT -->
                     <div class="disp-inline-block" ng-class="{ 'has-success': form.email.$valid  && submitted, 'has-error': form.email.$invalid && submitted } ">

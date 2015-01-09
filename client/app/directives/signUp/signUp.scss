@@ -21,6 +21,8 @@
   /*background-image: url("/assets/images/cocktail_craft.jpg");*/
   background-color: #2727a4;
   max-width: 2560px;
+
+  transition: all 0.33s ease-in-out;
   //padding-top: 2rem;
   @media only screen and (min-height : 520px) {
       height:70vh;
@@ -36,6 +38,11 @@
   // background-color: $indigo-500;
   //border-bottom: 1px solid rgba(255,255,255,0.82);
   
+}
+
+#bb-header-login {
+  border: 1px solid white;
+  margin-bottom: 2rem;
 }
 
 .header-card-main-logged-in {
@@ -80,6 +87,12 @@
 .signup-btn-container {
   margin-top: 1.25rem;
   margin-bottom: 4.09rem;
+  //margin-right: -2.5rem;
+}
+
+.signin-btn-container {
+  margin-top: 1.25rem;
+  margin-bottom: 2.09rem;
   //margin-right: -2.5rem;
 }
 

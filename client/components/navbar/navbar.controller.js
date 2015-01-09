@@ -14,22 +14,25 @@ angular.module('bevBuilderApp')
 
     $scope.logout = function() {
       Auth.logout();
-      $location.path('/login');
+      $rootScope.userStatus = 'login';
+      //$location.path('/login');
     };
 
     $scope.isActive = function(route) {
       return route === $location.path();
     };
 
-  
+    $rootScope.userStatus = 'signup';
 
-    $rootScope.userLogin = function() {
+    $scope.userLogin = function() {
       $rootScope.userStatus = 'login';
+      console.log($scope.userStatus);
 
     };
 
-    $rootScope.userSignin = function() {
-      $rootScope.userStatus = 'signin';
+    $scope.userSignin = function() {
+      $rootScope.userStatus = 'signup';
+      console.log($rootScope.userStatus);
 
     };
 

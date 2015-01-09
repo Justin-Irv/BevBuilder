@@ -1,4 +1,4 @@
-<header id="bb-header" class="navbar navbar-default navbar-static-top " ng-controller="NavbarCtrl" >
+<header id="bb-navbar" class="navbar navbar-default navbar-static-top " ng-controller="NavbarCtrl" >
     <div class="container-fluid">
     <div class="navbar-header navbar-padding ">
       <button class="navbar-toggle" type="button" ng-click="isCollapsed = !isCollapsed">
@@ -10,7 +10,7 @@
 
       <a href="/" class="navbar-brand "><img  src="/assets/images/bevbuilderlight.png" ></a>
     </div>
-    <div collapse="isCollapsed" class="navbar-collapse collapse" id="navbar-main">
+    <div id="bb-navbar-right" collapse="isCollapsed" class="navbar-collapse collapse" id="navbar-main">
       <ul class="nav navbar-nav">
         <li ng-repeat="item in menu" ng-class="{active: isActive(item.link)}">
             <!-- <a ng-href="{{item.link}}">{{item.title}}</a> -->
@@ -18,9 +18,9 @@
         <li ng-show="isAdmin()" ng-class="{active: isActive('/admin')}"><a href="/admin">Admin</a></li>
       </ul>
 
-      <ul class="nav navbar-nav navbar-right " >
-        <!-- <li ng-hide="isLoggedIn() && userStatus === 'signin'" ng-click="userSignin()" ng-class="{active: isActive('/signup')}"><a href="#">Sign up</a></li> -->
-        <li style="font-size: 1rem;" ng-hide="isLoggedIn()" ng-click="userLogin()"  class= "navbar-login" ng-class="{active: isActive('/login')}"><a href="#">Log In</a></li>
+      <ul  class="nav navbar-nav navbar-right " ng-switch on="userStatus">
+        <li  ng-hide="isLoggedIn()" ng-switch-when="login" ng-click="userSignin()" ng-class="{active: isActive('/signup')}"><a href="#">Sign Up</a></li>
+        <li  ng-switch-when="signup" ng-hide="isLoggedIn()" ng-click="userLogin()"  class= "navbar-login" ng-class="{active: isActive('/login')}"><a href="#">Log In</a></li>
         <li ng-show="isLoggedIn()"><p class="navbar-text">Hello {{ getCurrentUser().name }}</p> </li>
         <li ng-show="isLoggedIn()" class="velocity-transition-slideDownIn" ng-class="{active: isActive('/settings')}"><a href="/settings"><span class="glyphicon glyphicon-cog"></span></a></li>
         <li ng-show="isLoggedIn()" class="velocity-transition-slideDownIn" ng-class="{active: isActive('/logout')}"><a href="" ng-click="logout()">Logout</a></li>

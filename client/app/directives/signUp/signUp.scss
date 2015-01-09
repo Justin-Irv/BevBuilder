@@ -43,6 +43,23 @@
 #bb-header-login {
   border: 1px solid white;
   margin-bottom: 2rem;
+  .mat-input-group {
+    input {
+      width: 100%;
+      @media only screen and (min-width : 480px) {
+        width: 18rem;
+      }
+    }
+    input:focus ~ label, input:valid ~ label    {
+
+    }
+    .bar {
+      width: 100%;
+      @media only screen and (min-width : 768px) {
+        width: 100%;
+      }
+    }
+  }
 }
 
 .header-card-main-logged-in {

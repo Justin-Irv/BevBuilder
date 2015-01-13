@@ -51,8 +51,10 @@ angular.module('bevBuilderApp', [
           $location.path('/login');
         }
       });
-    $rootScope.$on('$stateChangeSuccess',function(){
-    $('html, body').velocity('scroll', {offset: '0px', mobileHA: false, delay: 1000, duration: 500}, 'easeInOutCirc');
-    });  
+    // $rootScope.$on('$viewContentLoaded',function(event){
+    // $('html').velocity('scroll', {offset: '0px', mobileHA: false, 
+    //   delay: 500, duration: 500}, 'easeInOutCirc');
+    // console.log(event);
+    // });  
   });
 });

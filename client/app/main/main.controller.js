@@ -17,8 +17,7 @@ angular.module('bevBuilderApp')
 
     $scope.classics = { desc: "Classic cocktails are the building blocks from which modern cocktails draw influence. Master the classics and the sky is the limit."};
 
-
-
+    
 
 
 //    $scope.awesomeThings = [];

@@ -32,9 +32,10 @@
     <!-- Add your site or application content here -->
     
     <div class="ui-view-container">
-    <!-- <div ng-include="'components/navbar/navbar.html'"></div> -->
+    <div ng-include="'components/navbar/navbar.html'"></div>
+    <sign-up></sign-up>
     <div class="root-container" autoscroll="true" ui-view=""></div>
-    <!-- <div ng-include="'components/footer/footer.html'"></div> -->
+    <div ng-include="'components/footer/footer.html'"></div>
     </div>
     
 
@@ -65,8 +66,9 @@
       <script src="bower_components/angular-ui-router/release/angular-ui-router.js"></script>
       <script src="bower_components/angular-animate/angular-animate.js"></script>
       <!-- endbower -->
+      <script src="bower_components/velocity/velocity.min.js"></script>
+
     <!-- endbuild -->
-      <script src="bower_components/imagefill/imagefill.js"></script>
         <!-- build:js({.tmp,client}) app/app.js -->
         <script src="app/app.js"></script>
           <!-- injector:js -->
@@ -107,9 +109,6 @@
           <script src="app/classics/classics.js"></script>
           <script src="app/contact/contact.controller.js"></script>
           <script src="app/contact/contact.js"></script>
-          <script src="app/directives/headroom/angular.headroom.js"></script>
-          <script src="app/directives/headroom/headroom.js"></script>
-          <script src="app/directives/imagefill/imagefill.directive.js"></script>
           <script src="app/directives/signUp/signUp.directive.js"></script>
           <script src="app/directives/signUp/signup.controller.js"></script>
           <script src="app/forum/forum.controller.js"></script>

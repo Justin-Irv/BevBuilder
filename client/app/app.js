@@ -7,8 +7,7 @@ angular.module('bevBuilderApp', [
   'ui.router',
   'ui.bootstrap',
   'SignUpDirective',
-  'ngAnimate',
-  'headroom'
+  'ngAnimate'
 ])
   .config(function ($stateProvider, $urlRouterProvider, $locationProvider, $httpProvider) {
     $urlRouterProvider
@@ -52,5 +51,8 @@ angular.module('bevBuilderApp', [
           $location.path('/login');
         }
       });
-    });
+    $rootScope.$on('$stateChangeSuccess',function(){
+    $('html, body').velocity('scroll', {offset: '0px', mobileHA: false, delay: 1000, duration: 500}, 'easeInOutCirc');
+    });  
   });
+});

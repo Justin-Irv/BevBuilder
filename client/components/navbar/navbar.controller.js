@@ -37,5 +37,11 @@ angular.module('bevBuilderApp')
     };
 
     $('.bb-image').imagecover();
+    $('hero-image1').imagecover();
 
+    $scope.$on('$stateChangeSuccess',function(event){
+    $('html').velocity('scroll', {offset: '0px', mobileHA: false, 
+      delay: 500, duration: 500}, 'easeInOutCirc');
+    console.log(event);
+    }); 
   });

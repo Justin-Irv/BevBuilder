@@ -86,7 +86,7 @@ html {
 }
 
 .container-fluid {
-  max-width: 2000px;
+  //max-width: 2000px;
 }
 
 
@@ -911,6 +911,7 @@ p {
 @import 'mixology/mixology.scss';
 @import 'recipes/recipes.scss';
 @import 'recipes/zyxt/zyxt.scss';
+@import 'slick/slick.scss';
 @import 'modal/modal.scss';
 // endinjector
 

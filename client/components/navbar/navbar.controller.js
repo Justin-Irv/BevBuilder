@@ -36,4 +36,6 @@ angular.module('bevBuilderApp')
 
     };
 
+    $('.bb-image').imagecover();
+
   });

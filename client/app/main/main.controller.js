@@ -1,18 +1,12 @@
 'use strict';
 
 angular.module('bevBuilderApp')
-  .controller('MainCtrl', function ($scope, $http) {
+  .controller('MainCtrl', function ($scope) {
 
   	$scope.isBreakpoint = function (alias) {
 
   		return $('.device-' + alias).is(':visible');
 
-  	};
-
-  	$scope.breakpointCheck = function() {
-  		if(isBreakpoint('xs')) {
-  			return true;
-  		}
   	};
 
     $scope.classics = { desc: "Classic cocktails are the building blocks from which modern cocktails draw influence. Master the classics and the sky is the limit."};

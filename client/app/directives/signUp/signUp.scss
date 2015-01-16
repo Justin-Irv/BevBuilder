@@ -111,29 +111,31 @@
 .signin-btn-container {
   margin-top: 1.25rem;
   margin-bottom: 2.09rem;
+    top: 100%;
   //margin-right: -2.5rem;
 }
 
 .signup-btn {
+
   width: 13rem;
   line-height: 2.5rem;
   background: #2727a4;
-  color: white;
-  border-top: 1px solid $pink-a200;
-  border-left: 1px solid $pink-a200;
-  border-right: 1px solid $pink-a200;
-  border-bottom: 1px solid $pink-a200;
-  border-radius: 1.75rem;
+  color: #ededed;
+  border-top: 1px solid #ededed;
+  border-left: 1px solid #ededed;
+  border-right: 1px solid #ededed;
+  border-bottom: 1px solid #ededed;
+  border-radius: 0rem;
   font-size: 1rem;
   //border: 2 px solid #ffffff;
   -webkit-transition: all 0.33s ease-in-out;
   -o-transition: all 0.33s ease-in-out;
   transition: all 0.33s ease-in-out;
   @media only screen and (min-width : 1200px) {
-       width: 20rem;
-       line-height: 4.125rem;
+       width: 18rem;
+       line-height: 3.5rem;
        font-size: 1.65rem;
-       border-radius: 2.5rem;
+       // border-radius: 2.5rem;
   }
 
 }
@@ -144,13 +146,13 @@
   // -webkit-box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
   // -moz-box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
   // box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
-  //background: #FFFFFF;
-  //color: #2727a4;
-  border-radius: 0;
-  border-top: 1px solid #ffffff;
-  border-left: 1px solid #ffffff;
-  border-right: 1px solid #ffffff;
-  border-bottom: 1px solid #ffffff;
+  background: #ededed;
+  color: #2727a4;
+  // border-radius: 0;
+  // border-top: 1px solid #ffffff;
+  // border-left: 1px solid #ffffff;
+  // border-right: 1px solid #ffffff;
+  // border-bottom: 1px solid #ffffff;
 
 }
 

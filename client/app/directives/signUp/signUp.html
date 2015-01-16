@@ -4,6 +4,9 @@
         <!-- ng-class="{ 'header-card-main-logged-in': isLoggedIn(), 'header-card-main': !isLoggedIn() }" -->
         <!-- FIRST LINE -->
         <div class="container-fluid text-center">
+
+
+        <!-- Log In -->
             <div id="bb-header-login" class="col-sm-6 col-sm-offset-3" ng-switch-when="login">
                 <form class="text-center " name="form" ng-submit="login(form)" novalidate>
                     <div class="header-hello ">
@@ -68,7 +71,7 @@
 
 
 
-
+    <!-- Sign Up -->
         <div ng-switch-when="signup">
             <form class="text-center " name="form" ng-submit="register(form)" novalidate>
                 <div class="header-hello ">
@@ -156,7 +159,7 @@
                 <!-- SIGN UP NOW BUTTON -->
                 <div class="signup-btn-container  text center">
                     <button class="signup-btn text-center" ng-click="signUp()" type="submit">
-                        Sign Me Up!
+                        Sign Up Now
                     </button>
                 </div>
             </form>

@@ -61,11 +61,11 @@ html {
   width: 5rem;
   background: #2727a4;
   color: white;
-  border-top: 1px solid $pink-a200;
-  border-left: 1px solid $pink-a200;
-  border-right: 1px solid $pink-a200;
-  border-bottom: 1px solid $pink-a200;
-  border-radius: 1.75rem;
+  border-top: 1px solid white;
+  border-left: 1px solid white;
+  border-right: 1px solid white;
+  border-bottom: 1px solid white;
+  // border-radius: 1.75rem;
   font-size: 1rem;
   text-align: center;
   margin-right: 1.5rem;
@@ -78,11 +78,13 @@ html {
 .login-signup-btn:hover,
 .login-signup-btn:active,
 .login-signup-btn:focus {
-  border-radius: 0;
-  border-top: 1px solid #ffffff;
-  border-left: 1px solid #ffffff;
-  border-right: 1px solid #ffffff;
-  border-bottom: 1px solid #ffffff;
+  // border-radius: 0;
+  // border-top: 1px solid #ffffff;
+  // border-left: 1px solid #ffffff;
+  // border-right: 1px solid #ffffff;
+  // border-bottom: 1px solid #ffffff;
+  color: #2727a4;
+  background: white;
 }
 
 .container-fluid {
@@ -114,7 +116,8 @@ html {
 
 $leftKeyline: 2.5rem;
 $rightKeyline: 2.5rem;
-
+$bbmargin: 3.125rem;
+$bbsection: 5.625rem;
 /*==================================================
 =            Bootstrap 3 Media Queries             =
 ==================================================*/
@@ -199,6 +202,7 @@ $mat-input-border-bottom-color: $pink-a200;
 
 .mat-input-group        { 
   position:relative; 
+  margin-top: .5rem;
   margin-bottom:0px; 
   font-size: 1rem;
   top:-0.1rem;
@@ -253,7 +257,7 @@ input:focus ~ label, input:valid ~ label    {
     /*color:$light-green-a200;*/
   @media only screen and (min-width : 1200px) {
       font-size: 1.65rem;
-      top:-1.25rem;
+      top:-1.5rem;
     }
 
 }
@@ -497,9 +501,10 @@ $colHighlight   : #fcfcfc;
 
 .text-display-1-wwd {
   font-size: 2.125rem;
-  font-weight: 600;
+  font-weight: 700;
   line-height: 3.5rem;
   color: #2727a4;
+  margin-bottom: 3.125rem;
   //letter-spacing: -.05rem;
 
   a {
@@ -550,7 +555,7 @@ $colHighlight   : #fcfcfc;
 .text-body {
     font-size: 1rem;
     font-weight: 400;
-    line-height: 1.618rem;
+    line-height: 1.65rem;
     color: rgba(255,255,255,1);
     a {
       color: $pink-a200;
@@ -565,13 +570,14 @@ $colHighlight   : #fcfcfc;
 .text-body-blue {
   font-size: 1rem;
   font-weight: 400;
-  line-height: 1.618rem;
+  line-height: 1.65rem;
   color: #2727a4;
   //margin-bottom: 3.75rem; 
   padding: 0 0rem 0 0rem;
   
   a {
     color: $pink-a200;
+    // font-weight: 600;
   }
   @media only screen and (min-width : 768px) {
     max-width: 35rem;
